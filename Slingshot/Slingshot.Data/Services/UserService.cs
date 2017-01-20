@@ -73,8 +73,8 @@ namespace Slingshot.Data.Services
             {
                 attechmentObjs = new AttachmentUserLevelModel []{
                     new AttachmentUserLevelModel {
-                        name="logo.PNG",
-                        filePath="C:\\Users\\User\\Music\\Captusdese.PNG"
+                        name="images.jpg",
+                        filePath="C:\\Users\\Nqobani Zulu\\Pictures\\47710206-images.jpg"
                     }
 
                 };
