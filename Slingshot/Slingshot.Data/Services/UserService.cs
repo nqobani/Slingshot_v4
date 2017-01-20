@@ -65,33 +65,44 @@ namespace Slingshot.Data.Services
             var email = dbCon.createEmail(campID, subject, HTML);
             long eID = email.Id;
             AttachmentUserLevelModel[] attechmentObjs;
-            try
+            if(!attechmentsJSONString.Equals(""))
             {
-                attechmentObjs = Newtonsoft.Json.JsonConvert.DeserializeObject<List<AttachmentUserLevelModel>>(attechmentsJSONString).ToArray();
-            }
-            catch (Exception)
-            {
-                attechmentObjs = new AttachmentUserLevelModel []{
+                try
+                {
+                    attechmentObjs = Newtonsoft.Json.JsonConvert.DeserializeObject<List<AttachmentUserLevelModel>>(attechmentsJSONString).ToArray();
+                }
+                catch (Exception)
+                {
+                    attechmentObjs = new AttachmentUserLevelModel[]{
                     new AttachmentUserLevelModel {
                         name="images.jpg",
                         filePath="C:\\Users\\Nqobani Zulu\\Pictures\\47710206-images.jpg"
                     }
 
                 };
+                }
             }
+            else
+            {
+                attechmentObjs = null;
+            }
+            
 
             var path = HttpContext.Current.Server.MapPath("~/uploads/attachments");
             Directory.CreateDirectory(path);
-
-            for (int i = 0; i < attechmentObjs.Length; i++)
+            if(attechmentObjs != null)
             {
-                string fileName = Path.GetFileName(attechmentObjs[i].filePath);
-                string destinationFilePath = Path.Combine(path, fileName);
+                for (int i = 0; i < attechmentObjs.Length; i++)
+                {
+                    string fileName = Path.GetFileName(attechmentObjs[i].filePath);
+                    string destinationFilePath = Path.Combine(path, fileName);
 
-                System.IO.File.Copy(attechmentObjs[i].filePath, destinationFilePath, true);
+                    System.IO.File.Copy(attechmentObjs[i].filePath, destinationFilePath, true);
 
-                dbCon.createAttachment(eID, attechmentObjs[i].name, attechmentObjs[i].filePath);
+                    dbCon.createAttachment(eID, attechmentObjs[i].name, attechmentObjs[i].filePath);
+                }
             }
+            
             return campaign;
         }
         public Boolean ShareCampaigns(string userId, long campId)

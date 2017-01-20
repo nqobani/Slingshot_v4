@@ -21,7 +21,7 @@ namespace Slingshot.Controllers
             return obj.sendCampaign(userId, vcardId, campId, toEmail);
         }
         [Route("add")]
-        public Campaign addCampaign(string creatorId, string attechmentsJSONString, string campaignName = "No Name", Boolean prefared = false, string thumbnail = "HTTPS", string subject = "TESTIING", string HTML = "<!DOCTYPE html>", string status = "public")
+        public Campaign addCampaign(string creatorId, string attechmentsJSONString="", string campaignName = "No Name", Boolean prefared = false, string thumbnail = "HTTPS", string subject = "TESTIING", string HTML = "<!DOCTYPE html>", string status = "public")
         {
             UserService obj = new UserService();
             return obj.createCampaign(creatorId, campaignName, prefared, thumbnail, subject, HTML, attechmentsJSONString, status);
