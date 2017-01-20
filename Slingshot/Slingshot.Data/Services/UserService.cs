@@ -65,7 +65,7 @@ namespace Slingshot.Data.Services
             var email = dbCon.createEmail(campID, subject, HTML);
             long eID = email.Id;
             AttachmentUserLevelModel[] attechmentObjs;
-            if(!attechmentsJSONString.Equals(""))
+            if(!attechmentsJSONString.Equals(null))
             {
                 try
                 {
@@ -75,8 +75,6 @@ namespace Slingshot.Data.Services
                 {
                     attechmentObjs = new AttachmentUserLevelModel[]{
                     new AttachmentUserLevelModel {
-                        name="images.jpg",
-                        filePath="C:\\Users\\Nqobani Zulu\\Pictures\\47710206-images.jpg"
                     }
 
                 };
