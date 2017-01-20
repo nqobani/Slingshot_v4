@@ -1,0 +1,39 @@
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot.Data\bin\Release\Slingshot.Data.dll.config
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot.Data\bin\Release\Slingshot.Data.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot.Data\bin\Release\Slingshot.Data.pdb
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot.Data\bin\Release\EntityFramework.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot.Data\bin\Release\Newtonsoft.Json.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot.Data\bin\Release\SendGrid.CSharp.HTTP.Client.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot.Data\bin\Release\SendGrid.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot.Data\bin\Release\Slingshot.LogicLayer.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot.Data\bin\Release\System.Net.Http.Formatting.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot.Data\bin\Release\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot.Data\bin\Release\Microsoft.AspNet.Identity.Core.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot.Data\bin\Release\Slingshot.LogicLayer.pdb
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot.Data\bin\Release\EntityFramework.xml
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot.Data\bin\Release\Newtonsoft.Json.xml
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot.Data\bin\Release\System.Net.Http.Formatting.xml
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot.Data\bin\Release\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot.Data\bin\Release\Microsoft.AspNet.Identity.Core.xml
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot.Data\obj\Release\Slingshot.LogicLayer.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot.Data\obj\Release\Slingshot.Data.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot.Data\obj\Release\Slingshot.Data.pdb
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Data\bin\Release\Slingshot.Data.dll.config
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Data\bin\Release\Slingshot.Data.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Data\bin\Release\Slingshot.Data.pdb
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Data\bin\Release\Newtonsoft.Json.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Data\bin\Release\SendGrid.CSharp.HTTP.Client.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Data\bin\Release\SendGrid.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Data\bin\Release\Slingshot.LogicLayer.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Data\bin\Release\System.Net.Http.Formatting.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Data\bin\Release\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Data\bin\Release\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Data\bin\Release\Slingshot.LogicLayer.pdb
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Data\bin\Release\EntityFramework.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Data\bin\Release\Newtonsoft.Json.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Data\bin\Release\System.Net.Http.Formatting.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Data\bin\Release\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Data\bin\Release\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Data\obj\Release\Slingshot.LogicLayer.csprojResolveAssemblyReference.cache
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Data\obj\Release\Slingshot.Data.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Data\obj\Release\Slingshot.Data.pdb

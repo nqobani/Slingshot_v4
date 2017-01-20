@@ -1,0 +1,10 @@
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot.Common\bin\Release\Slingshot.Common.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot.Common\bin\Release\Slingshot.Common.pdb
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot.Common\obj\Release\Slingshot.Common.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot.Common\obj\Release\Slingshot.Common.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot.Common\obj\Release\Slingshot.Common.pdb
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Common\bin\Release\Slingshot.Common.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Common\bin\Release\Slingshot.Common.pdb
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Common\obj\Release\Slingshot.Common.csprojResolveAssemblyReference.cache
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Common\obj\Release\Slingshot.Common.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Common\obj\Release\Slingshot.Common.pdb

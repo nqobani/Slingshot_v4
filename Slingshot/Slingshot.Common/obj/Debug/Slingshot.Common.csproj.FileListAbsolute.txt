@@ -1,0 +1,10 @@
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.Common\bin\Debug\Slingshot.Common.dll
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.Common\bin\Debug\Slingshot.Common.pdb
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.Common\obj\Debug\Slingshot.Common.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.Common\obj\Debug\Slingshot.Common.dll
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.Common\obj\Debug\Slingshot.Common.pdb
+C:\Users\Nqobani Zulu\Documents\slingshotDeploy\Slingshot\Slingshot.Common\bin\Debug\Slingshot.Common.dll
+C:\Users\Nqobani Zulu\Documents\slingshotDeploy\Slingshot\Slingshot.Common\bin\Debug\Slingshot.Common.pdb
+C:\Users\Nqobani Zulu\Documents\slingshotDeploy\Slingshot\Slingshot.Common\obj\Debug\Slingshot.Common.csprojResolveAssemblyReference.cache
+C:\Users\Nqobani Zulu\Documents\slingshotDeploy\Slingshot\Slingshot.Common\obj\Debug\Slingshot.Common.dll
+C:\Users\Nqobani Zulu\Documents\slingshotDeploy\Slingshot\Slingshot.Common\obj\Debug\Slingshot.Common.pdb

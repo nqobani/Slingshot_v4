@@ -1,0 +1,42 @@
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.LogicLayer\obj\Debug\Slingshot.Data.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.LogicLayer\obj\Debug\Slingshot.LogicLayer.dll
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.LogicLayer\obj\Debug\Slingshot.LogicLayer.pdb
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.LogicLayer\bin\Debug\Slingshot.LogicLayer.dll.config
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.LogicLayer\bin\Debug\Slingshot.LogicLayer.dll
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.LogicLayer\bin\Debug\Slingshot.LogicLayer.pdb
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.LogicLayer\bin\Debug\EntityFramework.dll
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.LogicLayer\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.LogicLayer\bin\Debug\EntityFramework.xml
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.LogicLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\documents\visual studio 2015\Projects\Slingshot\Slingshot.LogicLayer\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\User\documents\visual studio 2015\Projects\Slingshot\Slingshot.LogicLayer\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\User\documents\visual studio 2015\Projects\Slingshot\Slingshot.LogicLayer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\documents\visual studio 2015\Projects\Slingshot\Slingshot.LogicLayer\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\User\documents\visual studio 2015\Projects\Slingshot\Slingshot.LogicLayer\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\User\documents\visual studio 2015\Projects\Slingshot\Slingshot.LogicLayer\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\User\documents\visual studio 2015\Projects\Slingshot\Slingshot.LogicLayer\bin\Debug\Newtonsoft.Json.xml
+C:\Users\User\documents\visual studio 2015\Projects\Slingshot\Slingshot.LogicLayer\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\User\documents\visual studio 2015\Projects\Slingshot\Slingshot.LogicLayer\obj\Debug\Slingshot.LogicLayer.Migrations.Initial.resources
+C:\Users\User\documents\visual studio 2015\Projects\Slingshot\Slingshot.LogicLayer\obj\Debug\Slingshot.Data.csproj.GenerateResource.Cache
+C:\Users\User\documents\visual studio 2015\Projects\Slingshot\Slingshot.LogicLayer\obj\Debug\Slingshot.LogicLayer.Migrations.updatedCampaignAndRecipientModels.resources
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.LogicLayer\bin\Debug\Slingshot.LogicLayer.dll.config
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.LogicLayer\bin\Debug\Slingshot.LogicLayer.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.LogicLayer\bin\Debug\Slingshot.LogicLayer.pdb
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.LogicLayer\bin\Debug\EntityFramework.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.LogicLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.LogicLayer\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.LogicLayer\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.LogicLayer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.LogicLayer\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.LogicLayer\bin\Debug\EntityFramework.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.LogicLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.LogicLayer\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.LogicLayer\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.LogicLayer\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.LogicLayer\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.LogicLayer\obj\Debug\Slingshot.Data.csprojResolveAssemblyReference.cache
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.LogicLayer\obj\Debug\Slingshot.LogicLayer.Migrations.Initial.resources
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.LogicLayer\obj\Debug\Slingshot.LogicLayer.Migrations.updatedCampaignAndRecipientModels.resources
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.LogicLayer\obj\Debug\Slingshot.Data.csproj.GenerateResource.Cache
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.LogicLayer\obj\Debug\Slingshot.LogicLayer.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.LogicLayer\obj\Debug\Slingshot.LogicLayer.pdb

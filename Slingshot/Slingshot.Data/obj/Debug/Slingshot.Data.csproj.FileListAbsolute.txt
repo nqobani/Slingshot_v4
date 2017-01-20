@@ -1,0 +1,5 @@
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.Data\bin\Debug\Slingshot.Data.dll
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.Data\bin\Debug\Slingshot.Data.pdb
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.Data\obj\Debug\Slingshot.Data.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.Data\obj\Debug\Slingshot.Data.dll
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.Data\obj\Debug\Slingshot.Data.pdb

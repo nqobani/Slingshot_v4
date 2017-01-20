@@ -1,0 +1,196 @@
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\ApplicationInsights.config
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\roslyn\csc.exe
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\roslyn\vbc.exe
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\roslyn\VBCSCompiler.exe
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Slingshot.dll.config
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Slingshot.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Slingshot.pdb
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Antlr3.Runtime.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\EntityFramework.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\EntityFramework.SqlServer.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.AI.Web.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.ApplicationInsights.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.Owin.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.Owin.Security.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Newtonsoft.Json.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Owin.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Slingshot.Data.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Slingshot.LogicLayer.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Swashbuckle.Core.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\System.Net.Http.Formatting.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\System.Web.Helpers.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\System.Web.Http.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\System.Web.Http.Owin.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\System.Web.Http.WebHost.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\System.Web.Mvc.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\System.Web.Optimization.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\System.Web.Razor.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\System.Web.WebPages.Deployment.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\System.Web.WebPages.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\System.Web.WebPages.Razor.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\WebActivatorEx.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\WebGrease.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\SendGrid.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\SendGrid.CSharp.HTTP.Client.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Slingshot.Data.pdb
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Slingshot.LogicLayer.pdb
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.AI.Web.xml
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.ApplicationInsights.xml
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Newtonsoft.Json.xml
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\System.Net.Http.Formatting.xml
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\System.Web.Helpers.xml
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\System.Web.Http.xml
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\System.Web.Http.WebHost.xml
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\System.Web.Mvc.xml
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\System.Web.Optimization.xml
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\System.Web.Razor.xml
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\System.Web.WebPages.xml
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\System.Web.WebPages.Deployment.xml
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\System.Web.WebPages.Razor.xml
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Antlr3.Runtime.pdb
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\EntityFramework.xml
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\EntityFramework.SqlServer.xml
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.Owin.xml
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.Owin.Security.xml
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\bin\System.Web.Http.Owin.xml
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\obj\Release\Slingshot.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\obj\Release\Slingshot.dll
+C:\Users\User\Documents\slingshotdeploy\deploy\Slingshot\Slingshot\obj\Release\Slingshot.pdb
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\ApplicationInsights.config
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\roslyn\csc.exe
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\roslyn\vbc.exe
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\roslyn\VBCSCompiler.exe
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Slingshot.dll.config
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Slingshot.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Slingshot.pdb
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Antlr3.Runtime.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\EntityFramework.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\EntityFramework.SqlServer.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.AI.Web.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.Owin.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.Owin.Security.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Newtonsoft.Json.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Owin.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Slingshot.Data.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Slingshot.LogicLayer.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Swashbuckle.Core.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\System.Net.Http.Formatting.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\System.Web.Helpers.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\System.Web.Http.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\System.Web.Http.Owin.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\System.Web.Http.WebHost.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\System.Web.Mvc.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\System.Web.Optimization.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\System.Web.Razor.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\System.Web.WebPages.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\System.Web.WebPages.Razor.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\WebActivatorEx.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\WebGrease.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\SendGrid.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\SendGrid.CSharp.HTTP.Client.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Slingshot.Data.pdb
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Slingshot.LogicLayer.pdb
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.AI.Web.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Newtonsoft.Json.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\System.Net.Http.Formatting.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\System.Web.Helpers.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\System.Web.Http.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\System.Web.Http.WebHost.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\System.Web.Mvc.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\System.Web.Optimization.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\System.Web.Razor.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\System.Web.WebPages.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\System.Web.WebPages.Razor.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Antlr3.Runtime.pdb
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\EntityFramework.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\EntityFramework.SqlServer.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.Owin.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.Owin.Security.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\bin\System.Web.Http.Owin.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\obj\Release\Slingshot.csprojResolveAssemblyReference.cache
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\obj\Release\Slingshot.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot\obj\Release\Slingshot.pdb

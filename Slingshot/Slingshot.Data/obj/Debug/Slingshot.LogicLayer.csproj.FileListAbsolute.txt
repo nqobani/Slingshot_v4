@@ -1,0 +1,57 @@
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.Data\obj\Debug\Slingshot.LogicLayer.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.Data\obj\Debug\Slingshot.Data.dll
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.Data\obj\Debug\Slingshot.Data.pdb
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.Data\bin\Debug\Slingshot.Data.dll.config
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.Data\bin\Debug\Slingshot.Data.dll
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.Data\bin\Debug\Slingshot.Data.pdb
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.Data\bin\Debug\Newtonsoft.Json.dll
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.Data\bin\Debug\SendGrid.CSharp.HTTP.Client.dll
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.Data\bin\Debug\SendGrid.dll
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.Data\bin\Debug\Slingshot.LogicLayer.dll
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.Data\bin\Debug\System.Net.Http.Formatting.dll
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.Data\bin\Debug\Slingshot.LogicLayer.pdb
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.Data\bin\Debug\Newtonsoft.Json.xml
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.Data\bin\Debug\System.Net.Http.Formatting.xml
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.Data\bin\Debug\EntityFramework.xml
+C:\Users\User\documents\visual studio 2015\Projects\Slingshot\Slingshot.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\User\documents\visual studio 2015\Projects\Slingshot\Slingshot.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\User\documents\visual studio 2015\Projects\Slingshot\Slingshot.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\User\documents\visual studio 2015\Projects\Slingshot\Slingshot.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Data\bin\Debug\Slingshot.Data.dll.config
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Data\bin\Debug\Slingshot.Data.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Data\bin\Debug\Slingshot.Data.pdb
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Data\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Data\bin\Debug\SendGrid.CSharp.HTTP.Client.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Data\bin\Debug\SendGrid.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Data\bin\Debug\Slingshot.LogicLayer.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Data\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Data\bin\Debug\Slingshot.LogicLayer.pdb
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Data\bin\Debug\EntityFramework.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Data\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Data\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Data\obj\Debug\Slingshot.LogicLayer.csprojResolveAssemblyReference.cache
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Data\obj\Debug\Slingshot.Data.dll
+C:\Users\Nqobani Zulu\Documents\deploy\Slingshot\Slingshot.Data\obj\Debug\Slingshot.Data.pdb
+C:\Users\Nqobani Zulu\Documents\slingshotDeploy\Slingshot\Slingshot.Data\obj\Debug\Slingshot.LogicLayer.csprojResolveAssemblyReference.cache
+C:\Users\Nqobani Zulu\Documents\slingshotDeploy\Slingshot\Slingshot.Data\obj\Debug\Slingshot.Data.dll
+C:\Users\Nqobani Zulu\Documents\slingshotDeploy\Slingshot\Slingshot.Data\obj\Debug\Slingshot.Data.pdb
+C:\Users\Nqobani Zulu\Documents\slingshotDeploy\Slingshot\Slingshot.Data\bin\Debug\Slingshot.Data.dll.config
+C:\Users\Nqobani Zulu\Documents\slingshotDeploy\Slingshot\Slingshot.Data\bin\Debug\Slingshot.Data.dll
+C:\Users\Nqobani Zulu\Documents\slingshotDeploy\Slingshot\Slingshot.Data\bin\Debug\Slingshot.Data.pdb
+C:\Users\Nqobani Zulu\Documents\slingshotDeploy\Slingshot\Slingshot.Data\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Nqobani Zulu\Documents\slingshotDeploy\Slingshot\Slingshot.Data\bin\Debug\SendGrid.CSharp.HTTP.Client.dll
+C:\Users\Nqobani Zulu\Documents\slingshotDeploy\Slingshot\Slingshot.Data\bin\Debug\SendGrid.dll
+C:\Users\Nqobani Zulu\Documents\slingshotDeploy\Slingshot\Slingshot.Data\bin\Debug\Slingshot.LogicLayer.dll
+C:\Users\Nqobani Zulu\Documents\slingshotDeploy\Slingshot\Slingshot.Data\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Nqobani Zulu\Documents\slingshotDeploy\Slingshot\Slingshot.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Nqobani Zulu\Documents\slingshotDeploy\Slingshot\Slingshot.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Nqobani Zulu\Documents\slingshotDeploy\Slingshot\Slingshot.Data\bin\Debug\Slingshot.LogicLayer.pdb
+C:\Users\Nqobani Zulu\Documents\slingshotDeploy\Slingshot\Slingshot.Data\bin\Debug\EntityFramework.xml
+C:\Users\Nqobani Zulu\Documents\slingshotDeploy\Slingshot\Slingshot.Data\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Nqobani Zulu\Documents\slingshotDeploy\Slingshot\Slingshot.Data\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Nqobani Zulu\Documents\slingshotDeploy\Slingshot\Slingshot.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Nqobani Zulu\Documents\slingshotDeploy\Slingshot\Slingshot.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml

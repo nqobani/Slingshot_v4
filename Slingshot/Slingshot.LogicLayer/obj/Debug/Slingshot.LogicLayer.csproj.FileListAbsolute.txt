@@ -1,0 +1,10 @@
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.LogicLayer\bin\Debug\Slingshot.LogicLayer.dll.config
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.LogicLayer\bin\Debug\Slingshot.LogicLayer.dll
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.LogicLayer\bin\Debug\Slingshot.LogicLayer.pdb
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.LogicLayer\bin\Debug\EntityFramework.dll
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.LogicLayer\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.LogicLayer\bin\Debug\EntityFramework.xml
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.LogicLayer\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.LogicLayer\obj\Debug\Slingshot.LogicLayer.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.LogicLayer\obj\Debug\Slingshot.LogicLayer.dll
+c:\users\user\documents\visual studio 2015\Projects\Slingshot\Slingshot.LogicLayer\obj\Debug\Slingshot.LogicLayer.pdb
