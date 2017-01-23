@@ -246,7 +246,7 @@ namespace Slingshot
         private static string GetXmlCommentsPath()
         {
             //string path = Path.Combine(HttpRuntime.AppDomainAppPath, @"bin\Part1.Api.XML");
-            return System.String.Format(@"C:\Users\Nqobani Zulu\Documents\Slingshot_v4\Slingshot\Slingshot\bin\Slingshot.XML");
+            return System.String.Format(@"https://raw.githubusercontent.com/nqobani/Slingshot_v4/master/Slingshot/Slingshot/bin/Slingshot.XML");
             // return path;
         }
     }
