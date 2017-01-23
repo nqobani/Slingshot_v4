@@ -131,10 +131,6 @@ namespace Slingshot.Data
             return recipient;
         }
 
-
-
-
-
         public Campaign createCampaign(string creatorId, string name,Boolean prefared, string thumbnail,  string status = "public")
         {
             Campaign newCampaign = new Campaign();
