@@ -57,7 +57,7 @@ namespace Slingshot.Data.Services
         public Campaign createCampaign(string creatorId, string campaignName, Boolean prefared,string thumbnail, string subject, string HTML, string attechmentsJSONString, string status = "public")
         {
             string destinationFilePath = "";
-            if (!thumbnail.Equals(""))
+            if (!(thumbnail.Equals("")|| thumbnail.Equals(" ")))
             {
                 var thumbnailPath = HttpContext.Current.Server.MapPath("~/uploads/thumbnails");
                 Directory.CreateDirectory(thumbnailPath);
