@@ -56,7 +56,19 @@ namespace Slingshot.Data.Services
         }
         public Campaign createCampaign(string creatorId, string campaignName, Boolean prefared,string thumbnail, string subject, string HTML, string attechmentsJSONString, string status = "public")
         {
-            var campaign = dbCon.createCampaign(creatorId, campaignName, prefared, thumbnail, subject);
+            string destinationFilePath = "";
+            if (!thumbnail.Equals(""))
+            {
+                var thumbnailPath = HttpContext.Current.Server.MapPath("~/uploads/thumbnails");
+                Directory.CreateDirectory(thumbnailPath);
+
+                string fileName = Path.GetFileName(thumbnail);
+                destinationFilePath = Path.Combine(thumbnailPath, fileName);
+
+                System.IO.File.Copy(thumbnail, destinationFilePath, true);
+            }
+            
+            var campaign = dbCon.createCampaign(creatorId, campaignName, prefared, destinationFilePath, subject);
 
             long campID = campaign.Id;
 
@@ -93,9 +105,9 @@ namespace Slingshot.Data.Services
                 for (int i = 0; i < attechmentObjs.Length; i++)
                 {
                     string fileName = Path.GetFileName(attechmentObjs[i].filePath);
-                    string destinationFilePath = Path.Combine(path, fileName);
+                    string destinationFilePaths = Path.Combine(path, fileName);
 
-                    System.IO.File.Copy(attechmentObjs[i].filePath, destinationFilePath, true);
+                    System.IO.File.Copy(attechmentObjs[i].filePath, destinationFilePaths, true);
 
                     dbCon.createAttachment(eID, attechmentObjs[i].name, attechmentObjs[i].filePath);
                 }
@@ -172,7 +184,7 @@ namespace Slingshot.Data.Services
 
         public async Task SendEmail(string fromEmail, string toEmail, string subj, long vCardId, string HTML, Data.Models.Attachment[] emailAttechments)
         {
-            string apiKey = "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";//Environment.GetEnvironmentVariable("sendgrid_api_key", EnvironmentVariableTarget.User);
+            string apiKey = "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";//Environment.GetEnvironmentVariable("sendgrid_api_key", EnvironmentVariableTarget.User);
             dynamic sg = new SendGridAPIClient(apiKey);
 
             SendGrid.Helpers.Mail.Email from = new SendGrid.Helpers.Mail.Email(fromEmail);
