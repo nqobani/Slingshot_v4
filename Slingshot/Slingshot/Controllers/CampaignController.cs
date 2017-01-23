@@ -44,8 +44,6 @@ namespace Slingshot.Controllers
             Directory.CreateDirectory(path);
             string gesturefile = Path.Combine(Environment.CurrentDirectory, @"vCard\vCard.vcf");
 
-
-
             return path;
         }
     }

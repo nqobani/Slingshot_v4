@@ -1,6 +1,7 @@
 ﻿using SendGrid;
 using SendGrid.Helpers.Mail;
 using Slingshot.Data.Models;
+using Slingshot.LogicLayer.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -17,9 +18,9 @@ namespace Slingshot.Data.Services
         DbConnection dbCon = new DbConnection();
         ValidationHandler _validationHandler = new ValidationHandler();
 
-        public User createUser(string userName,string firstName,string lastName, string email, string password, string type)
+        public UserModel_forDisplayingData createUser(string userName,string firstName,string lastName, string email, string password, string phone, string type)
         {
-            return dbCon.createUser( userName, firstName, lastName, email, password, type);
+            return dbCon.createUser( userName, firstName, lastName, email, password, phone, type);
         }
         public UserModel[] GetAllUsers(string userName)
         {

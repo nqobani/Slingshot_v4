@@ -1,5 +1,6 @@
 ﻿using Slingshot.Data.Models;
 using Slingshot.Data.Services;
+using Slingshot.LogicLayer.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,9 +15,9 @@ namespace Slingshot.Controllers
     {
         UserService obj = new UserService();
         [Route("registerUser")]
-        public User register(string userName, string firstName, string lastName, string email, string password, string type = "member")
+        public UserModel_forDisplayingData register(string userName, string firstName, string lastName, string email, string password, string phone, string type = "member")
         {
-            return obj.createUser( userName, firstName, lastName, email, password, type);
+            return obj.createUser( userName, firstName, lastName, email, password, phone,   type);
         }
         [Route("get")]
         public UserModel[] GetAllUsers(string userName="")

@@ -1,5 +1,6 @@
 ﻿using Slingshot.Data.EntityFramework;
 using Slingshot.Data.Models;
+using Slingshot.LogicLayer.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,7 @@ namespace Slingshot.Data
     {
         ApplicationDbContext dbCon = new ApplicationDbContext();
 
-        public User createUser(string userName, string firstName, string lastName, string email, string password, string type)
+        public UserModel_forDisplayingData createUser(string userName, string firstName, string lastName, string email, string password, string phone, string type)
         {
 
             User newUser = new User();
@@ -23,13 +24,21 @@ namespace Slingshot.Data
             newUser.UserName = userName;
             newUser.FirstName = firstName;
             newUser.LastName = lastName;
+            newUser.PhoneNumber = phone;
             dbCon.Users.Add(newUser);
 
             dbCon.SaveChanges();
             var userId = newUser.Id;
 
             User user = dbCon.Users.SingleOrDefault(u => u.Id == userId);
-            return user;
+            return new UserModel_forDisplayingData {
+                Id=userId,
+                userName= newUser.UserName,
+                firstName= newUser.FirstName,
+                lastName= newUser.LastName,
+                email= newUser.Email,
+                phone= phone
+            };
         }
         public VCard createVCard(string userId, string firstName, string lastName, string company, string jobTitle, string email, string webPageAddress, string twitter, string businessPhoneNumber, string mobilePhone, string country, string city, string cityCode, string imageLink)
         {
