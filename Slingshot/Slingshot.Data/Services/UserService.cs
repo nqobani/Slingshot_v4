@@ -62,7 +62,7 @@ namespace Slingshot.Data.Services
                 var thumbnailPath = HttpContext.Current.Server.MapPath("~/uploads/thumbnails");
                 Directory.CreateDirectory(thumbnailPath);
                 string fileName = Path.GetFileName(thumbnail);
-                destinationFilePath = Path.Combine(thumbnailPath, fileName);
+                destinationFilePath = thumbnailPath+"/"+ fileName;
 
                 System.IO.File.Copy(thumbnail, destinationFilePath, true);
             }
@@ -106,14 +106,12 @@ namespace Slingshot.Data.Services
                     if(attechmentObjs[i].filePath!=null)
                     {
                         string fileName = Path.GetFileName(attechmentObjs[i].filePath);
-
-                        string destinationFilePaths = Path.Combine(path, fileName);
+                        string destinationFilePaths = path+"/"+ fileName;
 
                         System.IO.File.Copy(attechmentObjs[i].filePath, destinationFilePaths, true);
 
                         dbCon.createAttachment(eID, attechmentObjs[i].name, attechmentObjs[i].filePath);
                     }
-                    
                 }
             }
             

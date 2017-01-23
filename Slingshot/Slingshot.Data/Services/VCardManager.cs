@@ -30,9 +30,9 @@ namespace Slingshot.Data.Services
         public static void GenearateVCard(VCard vCard)
         {
             // var t = HostingEnvironment.MapPath("~\\Services\\vCard\\vCard.vcf");
-            var thumbnailPath = HttpContext.Current.Server.MapPath("~/uploads/vCard");
-            Directory.CreateDirectory(thumbnailPath);
-            string destinationFilePath = Path.Combine(thumbnailPath, "vCard.vcf");
+            var vCardPath = HttpContext.Current.Server.MapPath("~/uploads/vCard");
+            Directory.CreateDirectory(vCardPath);
+            string destinationFilePath = Path.Combine(vCardPath, "vCard.vcf");
             string fileName = destinationFilePath;
             using (var vCardFile = File.OpenWrite(fileName))
             using (var swWriter = new StreamWriter(vCardFile))
