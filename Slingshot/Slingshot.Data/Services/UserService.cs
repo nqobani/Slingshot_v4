@@ -222,22 +222,25 @@ namespace Slingshot.Data.Services
                 };
                 mail.AddAttachment(att);
             }
-
-            for (int i = 0; i < emailAttechments.Length; i++)
+            if(emailAttechments!=null)
             {
-                var eAttechment = _validationHandler.GetAttechmentData(emailAttechments[i].file);
-                eAttechment.Filename = emailAttechments[i].name;
-
-                var eAtt = new SendGrid.Helpers.Mail.Attachment
+                for (int i = 0; i < emailAttechments.Length; i++)
                 {
-                    Filename = eAttechment.Filename,
-                    Type = eAttechment.Type,
-                    Disposition = eAttechment.Disposition,
-                    ContentId = "kjhlknmnjhjkk",
-                    Content = eAttechment.Content
-                };
-                mail.AddAttachment(eAtt);
+                    var eAttechment = _validationHandler.GetAttechmentData(emailAttechments[i].file);
+                    eAttechment.Filename = emailAttechments[i].name;
+
+                    var eAtt = new SendGrid.Helpers.Mail.Attachment
+                    {
+                        Filename = eAttechment.Filename,
+                        Type = eAttechment.Type,
+                        Disposition = eAttechment.Disposition,
+                        ContentId = "kjhlknmnjhjkk",
+                        Content = eAttechment.Content
+                    };
+                    mail.AddAttachment(eAtt);
+                }
             }
+            
             dynamic response = await sg.client.mail.send.post(requestBody: mail.Get());
         }
 
