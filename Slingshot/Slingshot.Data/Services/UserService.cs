@@ -159,7 +159,7 @@ namespace Slingshot.Data.Services
 
         public History sendCampaign(string userId, long vcardId, long campId, string toEmail)
         {
-            Boolean hasAccess = _validationHandler.UserCampaignValidation(userId, campId);
+            //Boolean hasAccess = _validationHandler.UserCampaignValidation(userId, campId);
             if (true)
             {
                 string fromEmail = dbCon.GetUserEmail(userId);
