@@ -390,3 +390,4 @@ C:\Users\Nqobani Zulu\Documents\Slingshot_v4\Slingshot\Slingshot\bin\System.Web.
 C:\Users\Nqobani Zulu\Documents\Slingshot_v4\Slingshot\Slingshot\obj\Debug\Slingshot.csprojResolveAssemblyReference.cache
 C:\Users\Nqobani Zulu\Documents\Slingshot_v4\Slingshot\Slingshot\obj\Debug\Slingshot.dll
 C:\Users\Nqobani Zulu\Documents\Slingshot_v4\Slingshot\Slingshot\obj\Debug\Slingshot.pdb
+C:\Users\Nqobani Zulu\Documents\Slingshot_v4\Slingshot\Slingshot\bin\Slingshot.XML

@@ -63,7 +63,7 @@ namespace Slingshot.Data.Services
                 var thumbnailPath = HttpContext.Current.Server.MapPath("~/uploads/thumbnails");
                 Directory.CreateDirectory(thumbnailPath);
                 string fileName = Path.GetFileName(thumbnail);
-                destinationFilePath = thumbnailPath+"/"+ fileName;
+                destinationFilePath = thumbnailPath+"\\"+ fileName;
 
                 System.IO.File.Copy(thumbnail, destinationFilePath, true);
             }

@@ -31,7 +31,7 @@ namespace Slingshot.Data.Services
 
         public SendGrid.Helpers.Mail.Attachment GetAttechmentData(string filePath)
         {
-            if(filePath.Substring(0,8).ToLower().Contains("https"))
+            if(filePath.Substring(0,8).ToLower().StartsWith("https"))
             {
                 string base64ImageRepresentation = ConvertImageURLToBase64(filePath);
                 string fileName = filePath.Substring(filePath.LastIndexOf('/') + 1);
