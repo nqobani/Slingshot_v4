@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace Slingshot.Data.Services
 {
@@ -29,7 +30,10 @@ namespace Slingshot.Data.Services
         public static void GenearateVCard(VCard vCard)
         {
             // var t = HostingEnvironment.MapPath("~\\Services\\vCard\\vCard.vcf");
-            string fileName = System.IO.Path.GetTempPath() + "vCard.vcf";
+            var thumbnailPath = HttpContext.Current.Server.MapPath("~/uploads/vCard");
+            Directory.CreateDirectory(thumbnailPath);
+            string destinationFilePath = Path.Combine(thumbnailPath, "vCard.vcf");
+            string fileName = destinationFilePath;
             using (var vCardFile = File.OpenWrite(fileName))
             using (var swWriter = new StreamWriter(vCardFile))
             {

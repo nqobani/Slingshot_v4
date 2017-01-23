@@ -159,9 +159,9 @@ namespace Slingshot.Data.Services
 
         public History sendCampaign(string userId, long vcardId, long campId, string toEmail)
         {
-            //Boolean hasAccess = _validationHandler.UserCampaignValidation(userId, campId);
-            //if (true)
-            //{
+            Boolean hasAccess = _validationHandler.UserCampaignValidation(userId, campId);
+            if (hasAccess)
+            {
                 string fromEmail = dbCon.GetUserEmail(userId);
                 Data.Models.Email email = dbCon.GetEmail(campId);
 
@@ -173,11 +173,11 @@ namespace Slingshot.Data.Services
                 SendEmail(fromEmail, toEmail, subject, vcardId, html, attechments).Wait();
 
                 return dbCon.createHistory(userId, campId, toEmail, 0);
-            //}
-            //else
-            //{
-            //    return new History { };
-            //}
+            }
+            else
+            {
+                return new History { };
+            }
         }
 
 
@@ -208,7 +208,7 @@ namespace Slingshot.Data.Services
             }
             Boolean hasVCard = VCardManager.LoadVCardData(dbCon.GetVCard(vCardId));
 
-            if (false)
+            if (hasVCard)
             {
                 string fileName = System.IO.Path.GetTempPath() + "vCard.vcf";
                 var attachment = _validationHandler.GetAttechmentData(fileName);
