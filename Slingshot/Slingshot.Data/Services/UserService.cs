@@ -61,7 +61,6 @@ namespace Slingshot.Data.Services
             {
                 var thumbnailPath = HttpContext.Current.Server.MapPath("~/uploads/thumbnails");
                 Directory.CreateDirectory(thumbnailPath);
-
                 string fileName = Path.GetFileName(thumbnail);
                 destinationFilePath = Path.Combine(thumbnailPath, fileName);
 
@@ -77,7 +76,7 @@ namespace Slingshot.Data.Services
             var email = dbCon.createEmail(campID, subject, HTML);
             long eID = email.Id;
             AttachmentUserLevelModel[] attechmentObjs;
-            if(!attechmentsJSONString.Equals(null))
+            if(!attechmentsJSONString.Equals(""))
             {
                 try
                 {
@@ -99,7 +98,7 @@ namespace Slingshot.Data.Services
             
 
             var path = HttpContext.Current.Server.MapPath("~/uploads/attachments");
-            Directory.CreateDirectory(path);
+            //Directory.CreateDirectory(path);
             if(attechmentObjs != null)
             {
                 for (int i = 0; i < attechmentObjs.Length; i++)
