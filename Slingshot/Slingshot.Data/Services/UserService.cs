@@ -98,7 +98,7 @@ namespace Slingshot.Data.Services
             
 
             var path = HttpContext.Current.Server.MapPath("~/uploads/attachments");
-            //Directory.CreateDirectory(path);
+            Directory.CreateDirectory(path);
             if(attechmentObjs != null)
             {
                 for (int i = 0; i < attechmentObjs.Length; i++)
