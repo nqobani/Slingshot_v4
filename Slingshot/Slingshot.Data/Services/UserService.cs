@@ -259,6 +259,7 @@ namespace Slingshot.Data.Services
             for (int i = 0; i < recipientEmails.Length; i++)
             {
                 recipientEmails[i] = new SendGrid.Helpers.Mail.Email(toEmails[i]);
+                recipientEmails[i].Name = "";
             }
             return recipientEmails;
         }
