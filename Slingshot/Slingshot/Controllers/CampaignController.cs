@@ -43,7 +43,10 @@ namespace Slingshot.Controllers
             var path = HttpContext.Current.Server.MapPath("~/uploads/attachments");
             Directory.CreateDirectory(path);
             string gesturefile = Path.Combine(Environment.CurrentDirectory, @"vCard\vCard.vcf");
-            return gesturefile;
+
+
+
+            return path;
         }
     }
 }
