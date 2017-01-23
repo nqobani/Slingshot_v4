@@ -103,12 +103,17 @@ namespace Slingshot.Data.Services
             {
                 for (int i = 0; i < attechmentObjs.Length; i++)
                 {
-                    string fileName = Path.GetFileName(attechmentObjs[i].filePath);
-                    string destinationFilePaths = Path.Combine(path, fileName);
+                    if(attechmentObjs[i].filePath!=null)
+                    {
+                        string fileName = Path.GetFileName(attechmentObjs[i].filePath);
 
-                    System.IO.File.Copy(attechmentObjs[i].filePath, destinationFilePaths, true);
+                        string destinationFilePaths = Path.Combine(path, fileName);
 
-                    dbCon.createAttachment(eID, attechmentObjs[i].name, attechmentObjs[i].filePath);
+                        System.IO.File.Copy(attechmentObjs[i].filePath, destinationFilePaths, true);
+
+                        dbCon.createAttachment(eID, attechmentObjs[i].name, attechmentObjs[i].filePath);
+                    }
+                    
                 }
             }
             
