@@ -76,7 +76,7 @@ namespace Slingshot.Data.Services
             var email = dbCon.createEmail(campID, subject, HTML);
             long eID = email.Id;
             AttachmentUserLevelModel[] attechmentObjs;
-            if(!attechmentsJSONString.Equals(""))
+            if(!(attechmentsJSONString.Equals("")|| attechmentsJSONString.Equals(" ")))
             {
                 try
                 {
