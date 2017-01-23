@@ -208,7 +208,7 @@ namespace Slingshot.Data.Services
             }
             Boolean hasVCard = VCardManager.LoadVCardData(dbCon.GetVCard(vCardId));
 
-            if (hasVCard)
+            if (false)
             {
                 string fileName = System.IO.Path.GetTempPath() + "vCard.vcf";
                 var attachment = _validationHandler.GetAttechmentData(fileName);
