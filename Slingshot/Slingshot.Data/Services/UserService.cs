@@ -159,6 +159,7 @@ namespace Slingshot.Data.Services
 
         public History sendCampaign(string userId, long vcardId, long campId, string toEmail)
         {
+
             Boolean hasAccess = _validationHandler.UserCampaignValidation(userId, campId);
             if (hasAccess)
             {
@@ -206,22 +207,30 @@ namespace Slingshot.Data.Services
                 personalise.Tos = mailList;
                 mail.Personalization = new List<Personalization>() { personalise };
             }
-            Boolean hasVCard = VCardManager.LoadVCardData(dbCon.GetVCard(vCardId));
 
-            if (hasVCard)
+            if(vCardId != 0)
             {
-                string fileName = System.IO.Path.GetTempPath() + "vCard.vcf";
-                var attachment = _validationHandler.GetAttechmentData(fileName);
-                var att = new SendGrid.Helpers.Mail.Attachment
+                Boolean hasVCard = VCardManager.LoadVCardData(dbCon.GetVCard(vCardId));
+
+                if (hasVCard)
                 {
-                    Filename = attachment.Filename,
-                    Type = attachment.Type,
-                    Disposition = attachment.Disposition,
-                    ContentId = "kjhlknmnjhjkk",
-                    Content = attachment.Content
-                };
-                mail.AddAttachment(att);
+                    var thumbnailPath = HttpContext.Current.Server.MapPath("~/uploads/vCard");
+                    Directory.CreateDirectory(thumbnailPath);
+                    string destinationFilePath = Path.Combine(thumbnailPath, "vCard.vcf");
+
+                    var attachment = _validationHandler.GetAttechmentData(destinationFilePath);
+                    var att = new SendGrid.Helpers.Mail.Attachment
+                    {
+                        Filename = attachment.Filename,
+                        Type = attachment.Type,
+                        Disposition = attachment.Disposition,
+                        ContentId = "kjhlknmnjhjkk",
+                        Content = attachment.Content
+                    };
+                    mail.AddAttachment(att);
+                }
             }
+            
             if(emailAttechments!=null)
             {
                 for (int i = 0; i < emailAttechments.Length; i++)

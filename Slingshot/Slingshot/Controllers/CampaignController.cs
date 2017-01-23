@@ -16,7 +16,7 @@ namespace Slingshot.Controllers
     {
         UserService obj = new UserService();
         [Route("send")]
-        public History sendCampaigns(string userId, long vcardId, long campId, string toEmail)
+        public History sendCampaigns(string userId, long campId, string toEmail, long vcardId = 0)
         {
             return obj.sendCampaign(userId, vcardId, campId, toEmail);
         }
