@@ -11,6 +11,9 @@ using System.Web.Http;
 
 namespace Slingshot.Controllers
 {
+    /// <summary>
+    /// 
+    /// </summary>
     [RoutePrefix("api/campaign")]
     public class CampaignController : ApiController
     {
@@ -41,30 +44,43 @@ namespace Slingshot.Controllers
         /// <param name="status">'private' or 'public' If it private, the campaign will only be visible to the creator, the administrator and all the user its shared with. Only the creator and administrator can share a campaign with other users</param>
         /// <returns></returns>
         [Route("add")]
-        public Campaign addCampaign(string creatorId, string attechmentsJSONString="[]", string campaignName = "No Name", Boolean prefared = false, string thumbnail = " ", string subject = "immedia", string HTML = " ", string status = "public")
+        public Campaign addCampaign(string creatorId, string attechmentsJSONString = "[]", string campaignName = "No Name", Boolean prefared = false, string thumbnail = " ", string subject = "immedia", string HTML = " ", string status = "public")
         {
             UserService obj = new UserService();
             return obj.createCampaign(creatorId, campaignName, prefared, thumbnail, subject, HTML, attechmentsJSONString, status);
         }
+        /// <summary>
+        /// Allow the user to get all the campaign she/he has access to. Its also allow the user to do the search by campaign name.
+        /// </summary>
+        /// <param name="userId">Foreign key used to check which camplaigns does the user have access to</param>
+        /// <param name="name">Name of a campaign that the user can use for searching purposes</param>
+        /// <returns></returns>
         [Route("get")]
         public IEnumerable<Campaign> getCampaigns(string userId, string name = "")
         {
             UserService obj = new UserService();
             return obj.getCampaigns(userId, name);
         }
+        /// <summary>
+        /// Used to provided users access to campaigns
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <param name="campaignId"></param>
+        /// <returns></returns>
         [Route("share")]
         public Boolean shareCampaign(string userId, long campaignId)
         {
             return obj.ShareCampaigns(userId, campaignId);
         }
         [Route("uploadImage")]
-        public string uploadImage()
+        public string uploadImage(HttpPostedFile profileImage)
         {
-            var path = HttpContext.Current.Server.MapPath("~/uploads/attachments");
-            Directory.CreateDirectory(path);
-            string gesturefile = Path.Combine(Environment.CurrentDirectory, @"vCard\vCard.vcf");
+            //var path = HttpContext.Current.Server.MapPath("~/uploads/attachments");
+            //Directory.CreateDirectory(path);
+            //string gesturefile = Path.Combine(Environment.CurrentDirectory, @"vCard\vCard.vcf");
 
-            return path;
+            return profileImage.FileName;
         }
+        
     }
 }

@@ -13,6 +13,11 @@ namespace Slingshot.Controllers
     public class HistoryController : ApiController
     {
         UserService obj = new UserService();
+        /// <summary>
+        /// Used to get all the campaigns that the user sent over.
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
         [Route("getuserhistory")]
         public IEnumerable<History> GetUserHistory(string userId)
         {
