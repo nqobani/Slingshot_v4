@@ -526,9 +526,15 @@
             <param name="campaignId"></param>
             <returns></returns>
         </member>
+        <member name="M:Slingshot.Controllers.CampaignController.uploadImage(Slingshot.LogicLayer.Models.AttachmentUploadModel)">
+            <summary>
+            Code Testing...
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:Slingshot.Controllers.EventsController.createEvent(System.String,System.String,System.String,System.DateTime,System.DateTime)">
             <summary>
-            
+            Create new events.
             </summary>
             <param name="creatorId">CreatorId is a user ID, its used to link the created campaign with the user (creator)</param>
             <param name="title">Event title</param>
@@ -544,6 +550,37 @@
             <param name="userId"></param>
             <returns></returns>
         </member>
+        <member name="M:Slingshot.Controllers.RecipientController.AddClient(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="userId"></param>
+            <param name="fName"></param>
+            <param name="lName"></param>
+            <param name="email"></param>
+            <param name="cell"></param>
+            <param name="jobTile"></param>
+            <param name="country"></param>
+            <param name="province"></param>
+            <param name="city"></param>
+            <param name="street"></param>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Slingshot.Controllers.RecipientController.GetAllUserClients(System.Int64)">
+            <summary>
+            
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Slingshot.Controllers.RecipientController.GetClient(System.Int64)">
+            <summary>
+            
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
         <member name="M:Slingshot.Controllers.UserController.register(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
             <summary>
             
@@ -554,19 +591,19 @@
             <param name="email"></param>
             <param name="password"></param>
             <param name="phone"></param>
-            <param name="type"></param>
+            <param name="type">'member' or 'admin': Nothing can hiden from an admin (administrator).</param>
             <returns></returns>
         </member>
         <member name="M:Slingshot.Controllers.UserController.GetAllUsers(System.String)">
             <summary>
-            
+            Returns all the users in the database.
             </summary>
             <param name="userName"></param>
             <returns></returns>
         </member>
         <member name="M:Slingshot.Controllers.UserController.createVCard(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
             <summary>
-            
+            The data provided on this end-point will be used to create a vCard that will be attached to the campaign being sent.
             </summary>
             <param name="userId"></param>
             <param name="firstName"></param>

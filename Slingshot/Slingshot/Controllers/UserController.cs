@@ -23,7 +23,7 @@ namespace Slingshot.Controllers
         /// <param name="email"></param>
         /// <param name="password"></param>
         /// <param name="phone"></param>
-        /// <param name="type"></param>
+        /// <param name="type">'member' or 'admin': Nothing can hiden from an admin (administrator).</param>
         /// <returns></returns>
         [Route("registerUser")]
         public UserModel_forDisplayingData register(string userName, string firstName, string lastName, string email, string password, string phone, string type = "member")
@@ -31,7 +31,7 @@ namespace Slingshot.Controllers
             return obj.createUser( userName, firstName, lastName, email, password, phone,   type);
         }
         /// <summary>
-        /// 
+        /// Returns all the users in the database.
         /// </summary>
         /// <param name="userName"></param>
         /// <returns></returns>
@@ -41,7 +41,7 @@ namespace Slingshot.Controllers
             return obj.GetAllUsers(userName);
         }
         /// <summary>
-        /// 
+        /// The data provided on this end-point will be used to create a vCard that will be attached to the campaign being sent.
         /// </summary>
         /// <param name="userId"></param>
         /// <param name="firstName"></param>

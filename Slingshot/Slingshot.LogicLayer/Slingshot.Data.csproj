@@ -77,6 +77,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Attachment.cs" />
+    <Compile Include="Models\AttachmentUploadEntity.cs" />
     <Compile Include="Models\Campaign.cs" />
     <Compile Include="Models\Email.cs" />
     <Compile Include="Models\Event.cs" />

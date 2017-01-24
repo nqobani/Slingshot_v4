@@ -14,7 +14,7 @@ namespace Slingshot.Controllers
     {
         UserService obj = new UserService();
         /// <summary>
-        /// 
+        /// Create new events.
         /// </summary>
         /// <param name="creatorId">CreatorId is a user ID, its used to link the created campaign with the user (creator)</param>
         /// <param name="title">Event title</param>

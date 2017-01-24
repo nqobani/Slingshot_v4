@@ -6,10 +6,13 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
+using System.Net.Http.Formatting;
 using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web;
+using System.Web.UI.WebControls;
 
 namespace Slingshot.Data.Services
 {
@@ -18,9 +21,9 @@ namespace Slingshot.Data.Services
         DbConnection dbCon = new DbConnection();
         ValidationHandler _validationHandler = new ValidationHandler();
 
-        public UserModel_forDisplayingData createUser(string userName,string firstName,string lastName, string email, string password, string phone, string type)
+        public UserModel_forDisplayingData createUser(string userName, string firstName, string lastName, string email, string password, string phone, string type)
         {
-            return dbCon.createUser( userName, firstName, lastName, email, password, phone, type);
+            return dbCon.createUser(userName, firstName, lastName, email, password, phone, type);
         }
         public UserModel[] GetAllUsers(string userName)
         {
@@ -55,19 +58,19 @@ namespace Slingshot.Data.Services
                 return new Slingshot.Data.Models.VCard { };
             }
         }
-        public Campaign createCampaign(string creatorId, string campaignName, Boolean prefared,string thumbnail, string subject, string HTML, string attechmentsJSONString, string status = "public")
+        public Campaign createCampaign(string creatorId, string campaignName, Boolean prefared, string thumbnail, string subject, string HTML, string attechmentsJSONString, string status = "public")
         {
             string destinationFilePath = "";
-            if (!(thumbnail.Equals("")|| thumbnail.Equals(" ")))
+            if (!(thumbnail.Equals("") || thumbnail.Equals(" ")))
             {
                 var thumbnailPath = HttpContext.Current.Server.MapPath("~/uploads/thumbnails");
                 Directory.CreateDirectory(thumbnailPath);
                 string fileName = Path.GetFileName(thumbnail);
-                destinationFilePath = thumbnailPath+"\\"+ fileName;
+                destinationFilePath = thumbnailPath + "\\" + fileName;
 
                 System.IO.File.Copy(thumbnail, destinationFilePath, true);
             }
-            
+
             var campaign = dbCon.createCampaign(creatorId, campaignName, prefared, destinationFilePath, subject);
 
             long campID = campaign.Id;
@@ -77,7 +80,7 @@ namespace Slingshot.Data.Services
             var email = dbCon.createEmail(campID, subject, HTML);
             long eID = email.Id;
             AttachmentUserLevelModel[] attechmentObjs;
-            if(!(attechmentsJSONString.Equals("")|| attechmentsJSONString.Equals(" ")))
+            if (!(attechmentsJSONString.Equals("") || attechmentsJSONString.Equals(" ")))
             {
                 try
                 {
@@ -96,18 +99,18 @@ namespace Slingshot.Data.Services
             {
                 attechmentObjs = null;
             }
-            
+
 
             var path = HttpContext.Current.Server.MapPath("~/uploads/attachments");
             Directory.CreateDirectory(path);
-            if(attechmentObjs != null)
+            if (attechmentObjs != null)
             {
                 for (int i = 0; i < attechmentObjs.Length; i++)
                 {
-                    if(attechmentObjs[i].filePath!=null)
+                    if (attechmentObjs[i].filePath != null)
                     {
                         string fileName = Path.GetFileName(attechmentObjs[i].filePath);
-                        string destinationFilePaths = path+"/"+ fileName;
+                        string destinationFilePaths = path + "/" + fileName;
 
                         System.IO.File.Copy(attechmentObjs[i].filePath, destinationFilePaths, true);
 
@@ -115,7 +118,7 @@ namespace Slingshot.Data.Services
                     }
                 }
             }
-            
+
             return campaign;
         }
         public Boolean ShareCampaigns(string userId, long campId)
@@ -147,9 +150,10 @@ namespace Slingshot.Data.Services
                     long cId = (long)campId[i];
                     if (_validationHandler.CanUserShare(userId, cId))
                     {
-                        userCamp[i] = new UserCampaign {
-                            userId=userId,
-                            campaignId=cId
+                        userCamp[i] = new UserCampaign
+                        {
+                            userId = userId,
+                            campaignId = cId
                         };
                     }
                 }
@@ -188,7 +192,7 @@ namespace Slingshot.Data.Services
 
         public async Task SendEmail(string fromEmail, string toEmail, string subj, long vCardId, string HTML, Data.Models.Attachment[] emailAttechments)
         {
-            string apiKey = "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";//Environment.GetEnvironmentVariable("sendgrid_api_key", EnvironmentVariableTarget.User);
+            string apiKey = "SG.NSuT9q39Rf6EAUopCNbUdQ.0zyFc0nIvrZOomJJ4S_s_8N99lukseA7nogXThOkp3oZ";//Environment.GetEnvironmentVariable("sendgrid_api_key", EnvironmentVariableTarget.User);
             dynamic sg = new SendGridAPIClient(apiKey);
 
             SendGrid.Helpers.Mail.Email from = new SendGrid.Helpers.Mail.Email(fromEmail);
@@ -207,7 +211,7 @@ namespace Slingshot.Data.Services
                 mail.Personalization = new List<Personalization>() { personalise };
             }
 
-            if(vCardId != 0)
+            if (vCardId != 0)
             {
                 Boolean hasVCard = VCardManager.LoadVCardData(dbCon.GetVCard(vCardId));
 
@@ -229,8 +233,8 @@ namespace Slingshot.Data.Services
                     mail.AddAttachment(att);
                 }
             }
-            
-            if(emailAttechments!=null)
+
+            if (emailAttechments != null)
             {
                 for (int i = 0; i < emailAttechments.Length; i++)
                 {
@@ -248,7 +252,7 @@ namespace Slingshot.Data.Services
                     mail.AddAttachment(eAtt);
                 }
             }
-            
+
             dynamic response = await sg.client.mail.send.post(requestBody: mail.Get());
         }
 
@@ -287,7 +291,7 @@ namespace Slingshot.Data.Services
         {
             if (dbCon.UserExists(userId))
             {
-                var recipient = dbCon.CaptureRecipientData(userId, fName, lName, email, phone,  jobTile,  country,  province,  city,  street,  code);
+                var recipient = dbCon.CaptureRecipientData(userId, fName, lName, email, phone, jobTile, country, province, city, street, code);
                 return recipient;
             }
             else
@@ -308,6 +312,15 @@ namespace Slingshot.Data.Services
             var recipient = dbCon.GetRecipient(recipientId);
             return recipient;
         }
+
+
+
+        //public void SaveAttachmentAsync(string userId, FileUpload fUpload)
+        //{
+        //    var thumbnailPath = HttpContext.Current.Server.MapPath("~/uploads/thumbnails");
+        //    Directory.CreateDirectory(thumbnailPath);
+        //    fUpload.PostedFile.SaveAs(thumbnailPath + "/" + fUpload.FileName.ToString());
+        //}
 
     }
 }

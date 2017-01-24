@@ -1,5 +1,6 @@
 ﻿using Slingshot.Data.Models;
 using Slingshot.Data.Services;
+using Slingshot.LogicLayer.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -8,6 +9,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web;
 using System.Web.Http;
+using System.Web.UI.WebControls;
 
 namespace Slingshot.Controllers
 {
@@ -72,14 +74,21 @@ namespace Slingshot.Controllers
         {
             return obj.ShareCampaigns(userId, campaignId);
         }
+        /// <summary>
+        /// Code Testing...
+        /// </summary>
+        /// <returns></returns>
         [Route("uploadImage")]
-        public string uploadImage(HttpPostedFile profileImage)
+        public string uploadImage(AttachmentUploadModel fUpload)
         {
-            //var path = HttpContext.Current.Server.MapPath("~/uploads/attachments");
+            var path = HttpContext.Current.Server.MapPath("~/uploads/attachments");
             //Directory.CreateDirectory(path);
             //string gesturefile = Path.Combine(Environment.CurrentDirectory, @"vCard\vCard.vcf");
 
-            return profileImage.FileName;
+            return path;
+
+            //obj.SaveAttachmentAsync(userId, fUpload);
+            //return fUpload.FileName;
         }
         
     }
