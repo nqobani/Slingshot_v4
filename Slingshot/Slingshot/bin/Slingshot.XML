@@ -481,6 +481,11 @@
             </summary>
             <param name="documentPath">The physical path to XML document.</param>
         </member>
+        <member name="T:Slingshot.Controllers.CampaignController">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="M:Slingshot.Controllers.CampaignController.sendCampaigns(System.String,System.Int64,System.String,System.Int64)">
             <summary>
             send campiagn to recipient/s
@@ -503,6 +508,87 @@
             <param name="subject"></param>
             <param name="HTML"></param>
             <param name="status">'private' or 'public' If it private, the campaign will only be visible to the creator, the administrator and all the user its shared with. Only the creator and administrator can share a campaign with other users</param>
+            <returns></returns>
+        </member>
+        <member name="M:Slingshot.Controllers.CampaignController.getCampaigns(System.String,System.String)">
+            <summary>
+            Allow the user to get all the campaign she/he has access to. Its also allow the user to do the search by campaign name.
+            </summary>
+            <param name="userId">Foreign key used to check which camplaigns does the user have access to</param>
+            <param name="name">Name of a campaign that the user can use for searching purposes</param>
+            <returns></returns>
+        </member>
+        <member name="M:Slingshot.Controllers.CampaignController.shareCampaign(System.String,System.Int64)">
+            <summary>
+            Used to provided users access to campaigns
+            </summary>
+            <param name="userId"></param>
+            <param name="campaignId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Slingshot.Controllers.EventsController.createEvent(System.String,System.String,System.String,System.DateTime,System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="creatorId">CreatorId is a user ID, its used to link the created campaign with the user (creator)</param>
+            <param name="title">Event title</param>
+            <param name="location">Place where the event will take place</param>
+            <param name="startDateTime">start date and time of ther event</param>
+            <param name="endDateTime">end date and time of the event</param>
+            <returns></returns>
+        </member>
+        <member name="M:Slingshot.Controllers.HistoryController.GetUserHistory(System.String)">
+            <summary>
+            Used to get all the campaigns that the user sent over.
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Slingshot.Controllers.UserController.register(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="userName"></param>
+            <param name="firstName"></param>
+            <param name="lastName"></param>
+            <param name="email"></param>
+            <param name="password"></param>
+            <param name="phone"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Slingshot.Controllers.UserController.GetAllUsers(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="userName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Slingshot.Controllers.UserController.createVCard(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="userId"></param>
+            <param name="firstName"></param>
+            <param name="lastName"></param>
+            <param name="company"></param>
+            <param name="jobTitle"></param>
+            <param name="email"></param>
+            <param name="webPageAddress"></param>
+            <param name="twitter"></param>
+            <param name="businessPhoneNumber"></param>
+            <param name="mobilePhone"></param>
+            <param name="country"></param>
+            <param name="city"></param>
+            <param name="cityCode"></param>
+            <param name="imageLink"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Slingshot.Controllers.UserController.GetUserVCards(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="userId"></param>
             <returns></returns>
         </member>
     </members>
