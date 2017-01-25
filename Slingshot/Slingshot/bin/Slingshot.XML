@@ -481,6 +481,18 @@
             </summary>
             <param name="documentPath">The physical path to XML document.</param>
         </member>
+        <member name="T:Slingshot.Controllers.AttachmentFormatter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Slingshot.Controllers.AttachmentFormatter.Initialize(System.Web.Http.Controllers.HttpControllerSettings,System.Web.Http.Controllers.HttpControllerDescriptor)">
+            <summary>
+            
+            </summary>
+            <param name="settings"></param>
+            <param name="descriptor"></param>
+        </member>
         <member name="T:Slingshot.Controllers.CampaignController">
             <summary>
             
@@ -531,6 +543,7 @@
             Code Testing...
             </summary>
             <returns></returns>
+            
         </member>
         <member name="M:Slingshot.Controllers.EventsController.createEvent(System.String,System.String,System.String,System.DateTime,System.DateTime)">
             <summary>

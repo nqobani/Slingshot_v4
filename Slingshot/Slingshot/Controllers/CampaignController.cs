@@ -1,4 +1,5 @@
-﻿using Slingshot.Data.Models;
+﻿using Slingshot.Data.MediaManager;
+using Slingshot.Data.Models;
 using Slingshot.Data.Services;
 using Slingshot.LogicLayer.Models;
 using System;
@@ -9,6 +10,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web;
 using System.Web.Http;
+using System.Web.Http.Controllers;
 using System.Web.UI.WebControls;
 
 namespace Slingshot.Controllers
@@ -16,6 +18,25 @@ namespace Slingshot.Controllers
     /// <summary>
     /// 
     /// </summary>
+    public class AttachmentFormatter : Attribute, IControllerConfiguration
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="settings"></param>
+        /// <param name="descriptor"></param>
+        public void Initialize(HttpControllerSettings settings, HttpControllerDescriptor descriptor)
+        {
+            // Add a custom media-type formatter.
+            settings.Formatters.Add(new Data.MediaManager.AttachmentFormatter());
+        }
+    }
+
+
+    /// <summary>
+    /// 
+    /// </summary>
+    [AttachmentFormatter]
     [RoutePrefix("api/campaign")]
     public class CampaignController : ApiController
     {
@@ -78,12 +99,18 @@ namespace Slingshot.Controllers
         /// Code Testing...
         /// </summary>
         /// <returns></returns>
+        /// 
+        [HttpPost]
         [Route("uploadImage")]
         public string uploadImage(AttachmentUploadModel fUpload)
         {
-            var path = HttpContext.Current.Server.MapPath("~/uploads/attachments");
+            AttachmentUpload kk = new AttachmentUpload();
             //Directory.CreateDirectory(path);
             //string gesturefile = Path.Combine(Environment.CurrentDirectory, @"vCard\vCard.vcf");
+            var path = HttpContext.Current.Server.MapPath("~/uploads/attachments");
+
+            kk.SaveAttachment("sd", fUpload);
+
 
             return path;
 
