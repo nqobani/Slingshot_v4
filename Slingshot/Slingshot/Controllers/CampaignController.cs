@@ -67,10 +67,10 @@ namespace Slingshot.Controllers
         /// <param name="status">'private' or 'public' If it private, the campaign will only be visible to the creator, the administrator and all the user its shared with. Only the creator and administrator can share a campaign with other users</param>
         /// <returns></returns>
         [Route("add")]
-        public Campaign addCampaign(string creatorId, string attechmentsJSONString = "[]", string campaignName = "No Name", Boolean prefared = false, string thumbnail = " ", string subject = "immedia", string HTML = " ", string status = "public")
+        public Campaign addCampaign(string creatorId, AttachmentUploadModel fUpload, string campaignName = "No Name", Boolean prefared = false, string thumbnail = " ", string subject = "immedia", string HTML = " ", string status = "public")
         {
             UserService obj = new UserService();
-            return obj.createCampaign(creatorId, campaignName, prefared, thumbnail, subject, HTML, attechmentsJSONString, status);
+            return obj.createCampaign(creatorId, campaignName, prefared, thumbnail, subject, HTML, fUpload, status);
         }
         /// <summary>
         /// Allow the user to get all the campaign she/he has access to. Its also allow the user to do the search by campaign name.
@@ -109,7 +109,7 @@ namespace Slingshot.Controllers
             //string gesturefile = Path.Combine(Environment.CurrentDirectory, @"vCard\vCard.vcf");
             var path = HttpContext.Current.Server.MapPath("~/uploads/attachments");
 
-            kk.SaveAttachment("sd", fUpload);
+            var fdfd=kk.SaveAttachment(12, fUpload);
 
 
             return path;

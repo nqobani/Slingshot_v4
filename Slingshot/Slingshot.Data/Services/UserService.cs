@@ -1,5 +1,6 @@
 ﻿using SendGrid;
 using SendGrid.Helpers.Mail;
+using Slingshot.Data.MediaManager;
 using Slingshot.Data.Models;
 using Slingshot.LogicLayer.Models;
 using System;
@@ -20,7 +21,7 @@ namespace Slingshot.Data.Services
     {
         DbConnection dbCon = new DbConnection();
         ValidationHandler _validationHandler = new ValidationHandler();
-
+        AttachmentUpload fileUpload = new AttachmentUpload();
         public UserModel_forDisplayingData createUser(string userName, string firstName, string lastName, string email, string password, string phone, string type)
         {
             return dbCon.createUser(userName, firstName, lastName, email, password, phone, type);
@@ -58,18 +59,18 @@ namespace Slingshot.Data.Services
                 return new Slingshot.Data.Models.VCard { };
             }
         }
-        public Campaign createCampaign(string creatorId, string campaignName, Boolean prefared, string thumbnail, string subject, string HTML, string attechmentsJSONString, string status = "public")
+        public Campaign createCampaign(string creatorId, string campaignName, Boolean prefared, string thumbnail, string subject, string HTML, AttachmentUploadModel fUpload, string status = "public")
         {
             string destinationFilePath = "";
-            if (!(thumbnail.Equals("") || thumbnail.Equals(" ")))
-            {
-                var thumbnailPath = HttpContext.Current.Server.MapPath("~/uploads/thumbnails");
-                Directory.CreateDirectory(thumbnailPath);
-                string fileName = Path.GetFileName(thumbnail);
-                destinationFilePath = thumbnailPath + "\\" + fileName;
+            //if (!(thumbnail.Equals("") || thumbnail.Equals(" ")))
+            //{
+            //    var thumbnailPath = HttpContext.Current.Server.MapPath("~/uploads/thumbnails");
+            //    Directory.CreateDirectory(thumbnailPath);
+            //    string fileName = Path.GetFileName(thumbnail);
+            //    destinationFilePath = thumbnailPath + "\\" + fileName;
 
-                System.IO.File.Copy(thumbnail, destinationFilePath, true);
-            }
+            //    System.IO.File.Copy(thumbnail, destinationFilePath, true);
+            //}
 
             var campaign = dbCon.createCampaign(creatorId, campaignName, prefared, destinationFilePath, subject);
 
@@ -79,45 +80,24 @@ namespace Slingshot.Data.Services
 
             var email = dbCon.createEmail(campID, subject, HTML);
             long eID = email.Id;
-            AttachmentUserLevelModel[] attechmentObjs;
-            if (!(attechmentsJSONString.Equals("") || attechmentsJSONString.Equals(" ")))
-            {
-                try
-                {
-                    attechmentObjs = Newtonsoft.Json.JsonConvert.DeserializeObject<List<AttachmentUserLevelModel>>(attechmentsJSONString).ToArray();
-                }
-                catch (Exception)
-                {
-                    attechmentObjs = new AttachmentUserLevelModel[]{
-                    new AttachmentUserLevelModel {
-                    }
 
-                };
-                }
-            }
-            else
-            {
-                attechmentObjs = null;
-            }
-
-
-            var path = HttpContext.Current.Server.MapPath("~/uploads/attachments");
-            Directory.CreateDirectory(path);
-            if (attechmentObjs != null)
-            {
-                for (int i = 0; i < attechmentObjs.Length; i++)
-                {
-                    if (attechmentObjs[i].filePath != null)
-                    {
-                        string fileName = Path.GetFileName(attechmentObjs[i].filePath);
-                        string destinationFilePaths = path + "/" + fileName;
-
-                        System.IO.File.Copy(attechmentObjs[i].filePath, destinationFilePaths, true);
-
-                        dbCon.createAttachment(eID, attechmentObjs[i].name, attechmentObjs[i].filePath);
-                    }
-                }
-            }
+            string file = fileUpload.SaveAttachment(eID, fUpload).ToString();
+            string fileName = Path.GetFileName(file);
+            dbCon.createAttachment(eID, fileName, file);
+            //var path = HttpContext.Current.Server.MapPath("~/uploads/attachments");
+            //Directory.CreateDirectory(path);
+            //if (attechmentObjs != null)
+            //{
+            //    for (int i = 0; i < attechmentObjs.Length; i++)
+            //    {
+            //        if (attechmentObjs[i].filePath != null)
+            //        {
+            //string fileName = Path.GetFileName(attechmentObjs[i].filePath);
+            //string destinationFilePaths = path + "/" + fileName;
+            //System.IO.File.Copy(attechmentObjs[i].filePath, destinationFilePaths, true);
+            //        }
+            //    }
+            //}
 
             return campaign;
         }

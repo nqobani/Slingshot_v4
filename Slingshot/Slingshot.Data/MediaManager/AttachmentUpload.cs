@@ -14,7 +14,7 @@ namespace Slingshot.Data.MediaManager
     public class AttachmentUpload
     {
 
-        public async Task<string> SaveAttachment(string emailId, AttachmentUploadModel attachmentEntity)
+        public async Task<string> SaveAttachment(long emailId, AttachmentUploadModel attachmentEntity)
         {
             // Retrieve storage account from connection string.
             CloudStorageAccount storageAccount = CloudStorageAccount.Parse(CloudConfigurationManager.GetSetting("StorageConnectionString"));
@@ -23,7 +23,7 @@ namespace Slingshot.Data.MediaManager
             CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient();
 
             // Retrieve a reference to a container. 
-            CloudBlobContainer container = blobClient.GetContainerReference("attachment");
+            CloudBlobContainer container = blobClient.GetContainerReference("attach");
 
             // Create the container if it doesn't already exist.
             var containerResult = container.CreateIfNotExists();
@@ -35,19 +35,38 @@ namespace Slingshot.Data.MediaManager
                 container.SetPermissions(permissions);
             }
             var fileName = Path.GetFileName(attachmentEntity.File);
+
+            CloudBlockBlob blockBlob;
             // Retrieve reference to a blob named "myblob".
-            CloudBlockBlob blockBlob = container.GetBlockBlobReference($"images/{fileName}");
+            if (attachmentEntity.ContentType.StartsWith("image"))
+            {
+                blockBlob = container.GetBlockBlobReference($"images/{fileName}");
+            }
+            else if (attachmentEntity.ContentType.StartsWith("video"))
+            {
+                blockBlob = container.GetBlockBlobReference($"videos/{fileName}");
+            }
+            else if (attachmentEntity.ContentType.StartsWith("audio"))
+            {
+                blockBlob = container.GetBlockBlobReference($"audios/{fileName}");
+            }
+            else
+            {
+                blockBlob = container.GetBlockBlobReference($"documents/{fileName}");
+            }
 
 
 
-            // Create or overwrite the "myblob" blob with contents from a local file.
+            string tempFile;
+            //Create or overwrite the "myblob" blob with contents from a local file.
             using (var fileStream = System.IO.File.OpenRead(attachmentEntity.File))
             {
                 blockBlob.UploadFromStream(fileStream);
-
+                tempFile = fileStream.Name;
             }
-            //File.Delete(attachmentUploadEntity.TempFilePath);
-            return "";
+            File.Delete(tempFile);
+            var d = blockBlob.StorageUri.PrimaryUri.AbsoluteUri.ToString();
+            return d;
         }
     }
 }

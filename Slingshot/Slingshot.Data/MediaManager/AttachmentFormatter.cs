@@ -7,14 +7,13 @@ using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Formatting;
 using System.Net.Http.Headers;
-using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 
 namespace Slingshot.Data.MediaManager
 {
     public class AttachmentFormatter : MediaTypeFormatter
-    {
+    { 
         private static Dictionary<string, string> MimeTypeExtensions = new Dictionary<string, string>
         {
             {"audio/aac", ".aac"},
@@ -25,6 +24,9 @@ namespace Slingshot.Data.MediaManager
             {"image/jpeg", ".jpg"},
             {"image/png", ".png"},
             {"video/mp4", ".mp4"},
+            {"application/pdf", ".pdf"},
+            {"text/plain", ".txt"},
+            {"application/msword", ".doc"},
         };
 
         public AttachmentFormatter()
@@ -42,6 +44,11 @@ namespace Slingshot.Data.MediaManager
 
             //Video
             SupportedMediaTypes.Add(new MediaTypeHeaderValue("video/mp4"));
+
+            //text
+            SupportedMediaTypes.Add(new MediaTypeHeaderValue("application/msword"));
+            SupportedMediaTypes.Add(new MediaTypeHeaderValue("text/plain"));
+            SupportedMediaTypes.Add(new MediaTypeHeaderValue("application/pdf"));
 
             SupportedMediaTypes.Add(new MediaTypeHeaderValue("multipart/form-data"));
         }
@@ -78,7 +85,9 @@ namespace Slingshot.Data.MediaManager
                         if (fileMediaType != null
                             && (fileMediaType.StartsWith("audio", StringComparison.InvariantCulture)
                                 || fileMediaType.StartsWith("image", StringComparison.InvariantCulture)
-                                || fileMediaType.StartsWith("video", StringComparison.InvariantCulture)))
+                                || fileMediaType.StartsWith("video", StringComparison.InvariantCulture)
+                                || fileMediaType.StartsWith("application", StringComparison.InvariantCulture)
+                                || fileMediaType.StartsWith("text", StringComparison.InvariantCulture)))
                         {
                             mediaContent = httpContent;
                             await WriteMediaContentToFileAsync(filename, mediaContent);
@@ -104,7 +113,9 @@ namespace Slingshot.Data.MediaManager
                 if (fileMediaType != null
                     && (fileMediaType.StartsWith("audio", StringComparison.InvariantCulture)
                         || fileMediaType.StartsWith("image", StringComparison.InvariantCulture)
-                        || fileMediaType.StartsWith("video", StringComparison.InvariantCulture)))
+                        || fileMediaType.StartsWith("video", StringComparison.InvariantCulture)
+                        || fileMediaType.StartsWith("application", StringComparison.InvariantCulture)
+                        || fileMediaType.StartsWith("text", StringComparison.InvariantCulture)))
                 {
                     mediaContent = content;
                     await WriteMediaContentToFileAsync(filename, mediaContent);
