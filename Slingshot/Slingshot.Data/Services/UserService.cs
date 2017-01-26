@@ -81,7 +81,7 @@ namespace Slingshot.Data.Services
             var email = dbCon.createEmail(campID, subject, HTML);
             long eID = email.Id;
 
-            string file = fileUpload.SaveAttachment(eID, fUpload).ToString();
+            string file = fileUpload.SaveAttachment(eID, fUpload).Result;
             string fileName = Path.GetFileName(file);
             dbCon.createAttachment(eID, fileName, file);
             //var path = HttpContext.Current.Server.MapPath("~/uploads/attachments");
