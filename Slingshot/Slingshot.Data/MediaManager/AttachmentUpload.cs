@@ -55,8 +55,6 @@ namespace Slingshot.Data.MediaManager
                 blockBlob = container.GetBlockBlobReference($"documents/{fileName}");
             }
 
-
-
             string tempFile;
             //Create or overwrite the "myblob" blob with contents from a local file.
             using (var fileStream = System.IO.File.OpenRead(attachmentEntity.File))
@@ -65,8 +63,8 @@ namespace Slingshot.Data.MediaManager
                 tempFile = fileStream.Name;
             }
             File.Delete(tempFile);
-            var d = blockBlob.StorageUri.PrimaryUri.AbsoluteUri.ToString();
-            return d;
+            var filePath = blockBlob.StorageUri.PrimaryUri.AbsoluteUri.ToString();
+            return filePath;
         }
     }
 }

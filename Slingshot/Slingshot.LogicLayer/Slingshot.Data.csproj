@@ -75,6 +75,10 @@
     <Compile Include="Migrations\201701190802563_updatedCampaignAndRecipientModels.Designer.cs">
       <DependentUpon>201701190802563_updatedCampaignAndRecipientModels.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201701261416206_modelUpdate.cs" />
+    <Compile Include="Migrations\201701261416206_modelUpdate.Designer.cs">
+      <DependentUpon>201701261416206_modelUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Attachment.cs" />
     <Compile Include="Models\AttachmentUploadEntity.cs" />
@@ -101,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201701190802563_updatedCampaignAndRecipientModels.resx">
       <DependentUpon>201701190802563_updatedCampaignAndRecipientModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701261416206_modelUpdate.resx">
+      <DependentUpon>201701261416206_modelUpdate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

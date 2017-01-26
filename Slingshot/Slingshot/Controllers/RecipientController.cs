@@ -28,7 +28,7 @@ namespace Slingshot.Controllers
         /// <param name="street"></param>
         /// <param name="code"></param>
         /// <returns></returns>
-        [Route("addclient")]
+        [Route("addRecipient")]
         public Recipient AddClient(string userId, string fName, string lName, string email, string cell, string jobTile, string country, string province, string city, string street, string code)
         {
             return obj.CaptureRecipient(userId, fName, lName, email, cell,  jobTile,  country,  province,  city,  street,  code);
@@ -38,7 +38,7 @@ namespace Slingshot.Controllers
         /// </summary>
         /// <param name="userId"></param>
         /// <returns></returns>
-        [Route("getUserClients")]
+        [Route("getUserRecipients")]
         public IEnumerable<Recipient> GetAllUserClients(long userId)
         {
             return obj.GetAllUserRecipients(userId);
@@ -46,12 +46,12 @@ namespace Slingshot.Controllers
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="userId"></param>
+        /// <param name="recipientId"></param>
         /// <returns></returns>
-        [Route("getClient")]
-        public Recipient GetClient(long userId)
+        [Route("getRecipients")]
+        public Recipient GetClient(long recipientId)
         {
-            return obj.GetRecipient(userId);
+            return obj.GetRecipient(recipientId);
         }
 
     }

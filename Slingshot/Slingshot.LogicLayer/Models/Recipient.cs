@@ -17,6 +17,7 @@ namespace Slingshot.Data.Models
         public string email { get; set; }
         public string cell { get; set; }
         public string jobTitle { get; set; }
+        public string company { get; set; }
         public string country { get; set; }
         public string province { get; set; }
         public string city { get; set; }

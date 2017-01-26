@@ -229,6 +229,7 @@ namespace Slingshot.Data
         public IEnumerable<History> GetUserHistory(string userId)
         {
             var history = dbCon.tblHistory.Where(h => h.userId.Equals(userId));
+            history.OrderBy(d => d.sentDateTime);
             return history;
         }
         public IEnumerable<VCard> GetVCards(string userId)
