@@ -143,9 +143,9 @@ namespace Slingshot.Data.Services
         public History sendCampaign(string userId, long vcardId, long campId, string toEmail)
         {
 
-            Boolean hasAccess = _validationHandler.UserCampaignValidation(userId, campId);
-            if (hasAccess)
-            {
+            //Boolean hasAccess = _validationHandler.UserCampaignValidation(userId, campId);
+            //if (true)
+            //{
                 string fromEmail = dbCon.GetUserEmail(userId);
                 Data.Models.Email email = dbCon.GetEmail(campId);
 
@@ -157,11 +157,11 @@ namespace Slingshot.Data.Services
                 SendEmail(fromEmail, toEmail, subject, vcardId, html, attechments).Wait();
 
                 return dbCon.createHistory(userId, campId, toEmail, 0);
-            }
-            else
-            {
-                return new History { };
-            }
+            //}
+            //else
+            //{
+            //    return new History { };
+            //}
         }
 
 
