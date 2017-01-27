@@ -60,6 +60,7 @@ namespace Slingshot.Controllers
         /// <param name="creatorId">Creator Id is foriegn key the Indentify the user that is creating a campaign</param>
         /// <param name="fUpload"></param>
         /// <param name="campaignName"></param>
+        /// <param name="description"></param>
         /// <param name="thumbnail"></param>
         /// <param name="subject"></param>
         /// <param name="HTML"></param>
