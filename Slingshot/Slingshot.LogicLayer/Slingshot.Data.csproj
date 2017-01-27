@@ -71,6 +71,10 @@
     <Compile Include="Migrations\201701271001066_databaseUpdate.Designer.cs">
       <DependentUpon>201701271001066_databaseUpdate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201701271420590_xx.cs" />
+    <Compile Include="Migrations\201701271420590_xx.Designer.cs">
+      <DependentUpon>201701271420590_xx.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Attachment.cs" />
     <Compile Include="Models\AttachmentUploadEntity.cs" />
@@ -95,6 +99,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201701271001066_databaseUpdate.resx">
       <DependentUpon>201701271001066_databaseUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701271420590_xx.resx">
+      <DependentUpon>201701271420590_xx.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

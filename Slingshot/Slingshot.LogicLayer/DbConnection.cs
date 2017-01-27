@@ -219,6 +219,7 @@ namespace Slingshot.Data
         public IEnumerable<Campaign> getAllCampaigns(string userId, string campName)
         {
             var camps = dbCon.tblCampaigns.Where(c => c.creatorId.Equals(userId) || c.status.ToLower().Contains("public"));
+
             return camps;
         }
         public IEnumerable<Attachment> GetAttachmentByEmailId(long emailId)

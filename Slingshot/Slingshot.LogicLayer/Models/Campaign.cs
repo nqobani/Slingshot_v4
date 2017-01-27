@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,6 +17,7 @@ namespace Slingshot.Data.Models
         public string description { set; get; }
         public string status { get; set; }
         public string thumbnail { get; set; }
-        public ISet<Email> email { get; set; }
+        [ForeignKey("Id")]
+        public virtual ICollection<Email> email { get; set; }
     }
 }

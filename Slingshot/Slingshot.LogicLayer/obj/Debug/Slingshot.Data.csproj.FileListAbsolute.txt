@@ -60,3 +60,4 @@ C:\Users\Nqobani Zulu\Documents\Slingshot_v4\Slingshot\Slingshot.LogicLayer\obj\
 C:\Users\Nqobani Zulu\Documents\Slingshot_v4\Slingshot\Slingshot.LogicLayer\obj\Debug\Slingshot.LogicLayer.pdb
 C:\Users\Nqobani Zulu\Documents\Slingshot_v4\Slingshot\Slingshot.LogicLayer\obj\Debug\Slingshot.LogicLayer.Migrations.databaseUpdate.resources
 C:\Users\Nqobani Zulu\Documents\Slingshot_v4\Slingshot\Slingshot.LogicLayer\obj\Debug\Slingshot.Data.csproj.GenerateResource.Cache
+C:\Users\Nqobani Zulu\Documents\Slingshot_v4\Slingshot\Slingshot.LogicLayer\obj\Debug\Slingshot.LogicLayer.Migrations.xx.resources
