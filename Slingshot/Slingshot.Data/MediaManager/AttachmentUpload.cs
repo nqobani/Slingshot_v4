@@ -28,12 +28,12 @@ namespace Slingshot.Data.MediaManager
             // Create the container if it doesn't already exist.
             var containerResult = container.CreateIfNotExists();
 
-            if (containerResult)
-            {
+            //if (containerResult)
+            //{
                 var permissions = await container.GetPermissionsAsync();
                 permissions.PublicAccess = BlobContainerPublicAccessType.Blob;
                 container.SetPermissions(permissions);
-            }
+            //}
             var fileName = Path.GetFileName(attachmentEntity.File);
 
             CloudBlockBlob blockBlob;
