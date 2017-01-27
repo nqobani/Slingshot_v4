@@ -66,7 +66,7 @@ namespace Slingshot.Controllers
         /// <param name="status">'private' or 'public' If it private, the campaign will only be visible to the creator, the administrator and all the user its shared with. Only the creator and administrator can share a campaign with other users</param>
         /// <returns></returns>
         [Route("add")]
-        public Campaign addCampaign(string creatorId, AttachmentUploadModel fUpload, string campaignName = "No Name",string description="", string thumbnail = " ", string subject = "immedia", string HTML = " ", string status = "public")
+        public Campaign addCampaign(string creatorId, AttachmentUploadModel fUpload, string campaignName = "No Name",string description="No Description", string thumbnail = " ", string subject = "immedia", string HTML = " ", string status = "public")
         {
             if(string.IsNullOrWhiteSpace(creatorId))
             {
