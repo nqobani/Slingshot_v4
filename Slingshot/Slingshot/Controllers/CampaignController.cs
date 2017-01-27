@@ -60,21 +60,20 @@ namespace Slingshot.Controllers
         /// <param name="creatorId">Creator Id is foriegn key the Indentify the user that is creating a campaign</param>
         /// <param name="fUpload"></param>
         /// <param name="campaignName"></param>
-        /// <param name="prefered">This field if of Boolean Data type...</param>
         /// <param name="thumbnail"></param>
         /// <param name="subject"></param>
         /// <param name="HTML"></param>
         /// <param name="status">'private' or 'public' If it private, the campaign will only be visible to the creator, the administrator and all the user its shared with. Only the creator and administrator can share a campaign with other users</param>
         /// <returns></returns>
         [Route("add")]
-        public Campaign addCampaign(string creatorId, AttachmentUploadModel fUpload, string campaignName = "No Name", string thumbnail = " ", string subject = "immedia", string HTML = " ", string status = "public")
+        public Campaign addCampaign(string creatorId, AttachmentUploadModel fUpload, string campaignName = "No Name",string description="", string thumbnail = " ", string subject = "immedia", string HTML = " ", string status = "public")
         {
             if(string.IsNullOrWhiteSpace(creatorId))
             {
                 throw new ArgumentException("Parameter cannot be null", "original");
             }
             UserService obj = new UserService();
-            return obj.createCampaign(creatorId, campaignName, thumbnail, subject, HTML, fUpload, status);
+            return obj.createCampaign(creatorId, campaignName, description, thumbnail, subject, HTML, fUpload, status);
         }
         /// <summary>
         /// Allow the user to get all the campaign she/he has access to. Its also allow the user to do the search by campaign name.

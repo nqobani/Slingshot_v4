@@ -131,11 +131,12 @@ namespace Slingshot.Data
             return recipient;
         }
 
-        public Campaign createCampaign(string creatorId, string name, string thumbnail,  string status = "public")
+        public Campaign createCampaign(string creatorId, string name,string description, string thumbnail,  string status = "public")
         {
             Campaign newCampaign = new Campaign();
             newCampaign.creatorId = creatorId;
             newCampaign.name = name;
+            newCampaign.description = description;
             newCampaign.thumbnail = thumbnail;
             newCampaign.status = status;
             dbCon.tblCampaigns.Add(newCampaign);
