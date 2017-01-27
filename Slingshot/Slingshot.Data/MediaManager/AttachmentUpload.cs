@@ -23,7 +23,7 @@ namespace Slingshot.Data.MediaManager
             CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient();
 
             // Retrieve a reference to a container. 
-            CloudBlobContainer container = blobClient.GetContainerReference("attach");
+            CloudBlobContainer container = blobClient.GetContainerReference("attachments");
 
             // Create the container if it doesn't already exist.
             var containerResult = container.CreateIfNotExists();
