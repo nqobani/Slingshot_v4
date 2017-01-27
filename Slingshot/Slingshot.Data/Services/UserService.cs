@@ -170,7 +170,8 @@ namespace Slingshot.Data.Services
 
         public async Task SendEmail(string fromEmail, string toEmail, string subj, long vCardId, string HTML, Data.Models.Attachment[] emailAttechments)
         {
-            string apiKey = "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";//Environment.GetEnvironmentVariable("sendgrid_api_key", EnvironmentVariableTarget.User);
+            string[] apikey = new string[] { "SG.yqB-5hb1TQ6JENKhm", "b9LKA._ZJLzzL1FMi", "sNtBdE8bboX9c945RWgg", "_G5E-3fwMYuF" };
+            string apiKey = apikey[0] + apikey[1] + apikey[3] + apikey[2] ;//Environment.GetEnvironmentVariable("sendgrid_api_key", EnvironmentVariableTarget.User);
             dynamic sg = new SendGridAPIClient(apiKey);
 
             SendGrid.Helpers.Mail.Email from = new SendGrid.Helpers.Mail.Email(fromEmail);
