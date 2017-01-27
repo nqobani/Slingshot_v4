@@ -12,9 +12,9 @@ namespace Slingshot.Data.Models
         [Key]
         public long Id { get; set; }
         public string title { get; set; }
-        //public string location { get; set; }
+        public string location { get; set; }
         public DateTime startDateTime { get; set; }
         public DateTime endDateTime { get; set; }
-        //public long CreatorId { get; set; }
+        public string CreatorId { get; set; }
     }
 }

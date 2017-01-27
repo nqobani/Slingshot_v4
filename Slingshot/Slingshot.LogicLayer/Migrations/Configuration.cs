@@ -10,7 +10,6 @@ namespace Slingshot.LogicLayer.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "Slingshot.Data.EntityFramework.ApplicationDbContext";
         }
 
         protected override void Seed(Slingshot.Data.EntityFramework.ApplicationDbContext context)

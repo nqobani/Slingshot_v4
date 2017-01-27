@@ -291,14 +291,10 @@ namespace Slingshot.Data.Services
             return recipient;
         }
 
-
-
-        //public void SaveAttachmentAsync(string userId, FileUpload fUpload)
-        //{
-        //    var thumbnailPath = HttpContext.Current.Server.MapPath("~/uploads/thumbnails");
-        //    Directory.CreateDirectory(thumbnailPath);
-        //    fUpload.PostedFile.SaveAs(thumbnailPath + "/" + fUpload.FileName.ToString());
-        //}
+        public void cleanDatabase()
+        {
+            dbCon.cleanDatabase();
+        }
 
     }
 }

@@ -13,8 +13,8 @@ namespace Slingshot.Data.Models
         public long Id { get; set; }
         public string creatorId { get; set; }
         public string name { get; set; }
+        public string description { set; get; }
         public string status { get; set; }
-        public Boolean prefared { get; set; }
         public string thumbnail { get; set; }
         public ISet<Email> email { get; set; }
     }

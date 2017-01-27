@@ -138,7 +138,6 @@ namespace Slingshot.Data
             newCampaign.name = name;
             newCampaign.thumbnail = thumbnail;
             newCampaign.status = status;
-            newCampaign.prefared = prefared;
             dbCon.tblCampaigns.Add(newCampaign);
             dbCon.SaveChanges();
 
@@ -178,10 +177,10 @@ namespace Slingshot.Data
         {
             Event newEvent = new Event();
             newEvent.title = title;
-            //newEvent.location = location;
+            newEvent.location = location;
             newEvent.startDateTime = startDateTime;
             newEvent.endDateTime = endDateTime;
-            //newEvent.CreatorId = creatorId;
+            newEvent.CreatorId = creatorId;
             dbCon.tblEvents.Add(newEvent);
             dbCon.SaveChanges();
             return newEvent;
@@ -328,6 +327,24 @@ namespace Slingshot.Data
             dbCon.tblAttachments.RemoveRange(attachment);
             dbCon.SaveChanges();
             return attachment;
+        }
+        public void cleanDatabase()
+        {
+            var Att = dbCon.tblAttachments.Where(a => a.file.Contains(""));
+            var camp = dbCon.tblCampaigns.Where(a => a.name.Contains(""));
+            var em = dbCon.tblEmails.Where(a => a.html.Contains(""));
+            var ev = dbCon.tblEvents.Where(a => a.title.Contains(""));
+            var hist = dbCon.tblHistory.Where(a => a.toEmail.Contains(""));
+            var uc = dbCon.tblUserCampaigns.Where(a => a.userId.Contains(""));
+
+            dbCon.tblAttachments.RemoveRange(Att);
+            dbCon.tblCampaigns.RemoveRange(camp);
+            dbCon.tblEmails.RemoveRange(em);
+            dbCon.tblEvents.RemoveRange(ev);
+            dbCon.tblHistory.RemoveRange(hist);
+            dbCon.tblUserCampaigns.RemoveRange(uc);
+            dbCon.SaveChanges();
+
         }
     }
 }

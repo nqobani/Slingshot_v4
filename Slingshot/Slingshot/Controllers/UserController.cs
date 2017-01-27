@@ -73,5 +73,11 @@ namespace Slingshot.Controllers
         {
             return obj.GetUserVCards(userId);
         }
+        [Route("Clean")]
+        public string Clean()
+        {
+            obj.cleanDatabase();
+            return "sdsdf";
+        }
     }
 }

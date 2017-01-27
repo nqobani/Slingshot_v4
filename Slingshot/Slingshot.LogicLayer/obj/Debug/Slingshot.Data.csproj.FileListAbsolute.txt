@@ -56,9 +56,7 @@ C:\Users\Nqobani Zulu\Documents\Slingshot_v4\Slingshot\Slingshot.LogicLayer\bin\
 C:\Users\Nqobani Zulu\Documents\Slingshot_v4\Slingshot\Slingshot.LogicLayer\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Nqobani Zulu\Documents\Slingshot_v4\Slingshot\Slingshot.LogicLayer\bin\Debug\System.Net.Http.Formatting.xml
 C:\Users\Nqobani Zulu\Documents\Slingshot_v4\Slingshot\Slingshot.LogicLayer\obj\Debug\Slingshot.Data.csprojResolveAssemblyReference.cache
-C:\Users\Nqobani Zulu\Documents\Slingshot_v4\Slingshot\Slingshot.LogicLayer\obj\Debug\Slingshot.LogicLayer.Migrations.Initial.resources
-C:\Users\Nqobani Zulu\Documents\Slingshot_v4\Slingshot\Slingshot.LogicLayer\obj\Debug\Slingshot.LogicLayer.Migrations.updatedCampaignAndRecipientModels.resources
-C:\Users\Nqobani Zulu\Documents\Slingshot_v4\Slingshot\Slingshot.LogicLayer\obj\Debug\Slingshot.Data.csproj.GenerateResource.Cache
 C:\Users\Nqobani Zulu\Documents\Slingshot_v4\Slingshot\Slingshot.LogicLayer\obj\Debug\Slingshot.LogicLayer.dll
 C:\Users\Nqobani Zulu\Documents\Slingshot_v4\Slingshot\Slingshot.LogicLayer\obj\Debug\Slingshot.LogicLayer.pdb
-C:\Users\Nqobani Zulu\Documents\Slingshot_v4\Slingshot\Slingshot.LogicLayer\obj\Debug\Slingshot.LogicLayer.Migrations.modelUpdate.resources
+C:\Users\Nqobani Zulu\Documents\Slingshot_v4\Slingshot\Slingshot.LogicLayer\obj\Debug\Slingshot.LogicLayer.Migrations.databaseUpdate.resources
+C:\Users\Nqobani Zulu\Documents\Slingshot_v4\Slingshot\Slingshot.LogicLayer\obj\Debug\Slingshot.Data.csproj.GenerateResource.Cache

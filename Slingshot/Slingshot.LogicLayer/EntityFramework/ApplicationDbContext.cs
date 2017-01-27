@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNet.Identity.EntityFramework;
 using Slingshot.Data.Models;
+using Slingshot.LogicLayer.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -27,6 +28,7 @@ namespace Slingshot.Data.EntityFramework
 
         public DbSet<Event> tblEvents { get; set; }
 
+        public DbSet<PreferedCampaign> tblPreferedCampaign { get; set; }
 
         public ApplicationDbContext() : base("DefaultConnection", throwIfV1Schema: false)
         {

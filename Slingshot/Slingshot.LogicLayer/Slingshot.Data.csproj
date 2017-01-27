@@ -67,17 +67,9 @@
   <ItemGroup>
     <Compile Include="DbConnection.cs" />
     <Compile Include="EntityFramework\ApplicationDbContext.cs" />
-    <Compile Include="Migrations\201701171409198_Initial.cs" />
-    <Compile Include="Migrations\201701171409198_Initial.Designer.cs">
-      <DependentUpon>201701171409198_Initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201701190802563_updatedCampaignAndRecipientModels.cs" />
-    <Compile Include="Migrations\201701190802563_updatedCampaignAndRecipientModels.Designer.cs">
-      <DependentUpon>201701190802563_updatedCampaignAndRecipientModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201701261416206_modelUpdate.cs" />
-    <Compile Include="Migrations\201701261416206_modelUpdate.Designer.cs">
-      <DependentUpon>201701261416206_modelUpdate.cs</DependentUpon>
+    <Compile Include="Migrations\201701271001066_databaseUpdate.cs" />
+    <Compile Include="Migrations\201701271001066_databaseUpdate.Designer.cs">
+      <DependentUpon>201701271001066_databaseUpdate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Attachment.cs" />
@@ -87,6 +79,7 @@
     <Compile Include="Models\Event.cs" />
     <Compile Include="Models\History.cs" />
     <Compile Include="Models\Image.cs" />
+    <Compile Include="Models\PreferedCampaign.cs" />
     <Compile Include="Models\Recipient.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\UserCampaign.cs" />
@@ -100,14 +93,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201701171409198_Initial.resx">
-      <DependentUpon>201701171409198_Initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201701190802563_updatedCampaignAndRecipientModels.resx">
-      <DependentUpon>201701190802563_updatedCampaignAndRecipientModels.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201701261416206_modelUpdate.resx">
-      <DependentUpon>201701261416206_modelUpdate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201701271001066_databaseUpdate.resx">
+      <DependentUpon>201701271001066_databaseUpdate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
