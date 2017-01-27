@@ -59,7 +59,7 @@ namespace Slingshot.Data.Services
                 return new Slingshot.Data.Models.VCard { };
             }
         }
-        public Campaign createCampaign(string creatorId, string campaignName, Boolean prefared, string thumbnail, string subject, string HTML, AttachmentUploadModel fUpload, string status = "public")
+        public Campaign createCampaign(string creatorId, string campaignName, string thumbnail, string subject, string HTML, AttachmentUploadModel fUpload, string status = "public")
         {
             string destinationFilePath = "";
             //if (!(thumbnail.Equals("") || thumbnail.Equals(" ")))
@@ -72,7 +72,7 @@ namespace Slingshot.Data.Services
             //    System.IO.File.Copy(thumbnail, destinationFilePath, true);
             //}
 
-            var campaign = dbCon.createCampaign(creatorId, campaignName, prefared, destinationFilePath, subject);
+            var campaign = dbCon.createCampaign(creatorId, campaignName, destinationFilePath, subject);
 
             long campID = campaign.Id;
 

@@ -508,7 +508,7 @@
             <param name="vcardId">Each an every vCard has it own Id. The Id is user to get all the other vCard data from the api. If it provided, the api will attach that vCard to the campaign being sent</param>
             <returns></returns>
         </member>
-        <member name="M:Slingshot.Controllers.CampaignController.addCampaign(System.String,Slingshot.LogicLayer.Models.AttachmentUploadModel,System.String,System.Boolean,System.String,System.String,System.String,System.String)">
+        <member name="M:Slingshot.Controllers.CampaignController.addCampaign(System.String,Slingshot.LogicLayer.Models.AttachmentUploadModel,System.String,System.String,System.String,System.String,System.String)">
             <summary>
             This end-point is capable of creating a complete campaign( with the subject, campaign body in HTML formate and the attechments
             </summary>
