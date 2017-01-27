@@ -81,9 +81,13 @@ namespace Slingshot.Data.Services
             var email = dbCon.createEmail(campID, subject, HTML);
             long eID = email.Id;
 
-            string file = fileUpload.SaveAttachment(eID, fUpload).Result;
-            string fileName = Path.GetFileName(file);
-            dbCon.createAttachment(eID, fileName, file);
+            if(!(fUpload.File.Equals("")&& fUpload.Thumbnail.Equals("")))
+            {
+                string file = fileUpload.SaveAttachment(eID, fUpload).Result;
+                string fileName = Path.GetFileName(file);
+                dbCon.createAttachment(eID, fileName, file);
+            }
+            
             //var path = HttpContext.Current.Server.MapPath("~/uploads/attachments");
             //Directory.CreateDirectory(path);
             //if (attechmentObjs != null)
