@@ -59,7 +59,7 @@ namespace Slingshot.Data.Services
                 return new Slingshot.Data.Models.VCard { };
             }
         }
-        public Campaign createCampaign(string creatorId, string campaignName,string desciption, string thumbnail, string subject, string HTML, AttachmentUploadModel fUpload, string status = "public")
+        public async Task<Campaign> createCampaign(string creatorId, string campaignName, string desciption, string thumbnail, string subject, string HTML, AttachmentUploadModel fUpload, string status = "public")
         {
             string destinationFilePath = "";
             //if (!(thumbnail.Equals("") || thumbnail.Equals(" ")))
@@ -81,12 +81,12 @@ namespace Slingshot.Data.Services
             var email = dbCon.createEmail(campID, subject, HTML);
             long eID = email.Id;
 
-            
-                string file = fileUpload.SaveAttachment(eID, fUpload).Result;
-                string fileName = Path.GetFileName(file);
-                dbCon.createAttachment(eID, fileName, file);
-            
-            
+
+            string file = await fileUpload.SaveAttachment(eID, fUpload);
+            string fileName = Path.GetFileName(file);
+            dbCon.createAttachment(eID, fileName, file);
+
+
             //var path = HttpContext.Current.Server.MapPath("~/uploads/attachments");
             //Directory.CreateDirectory(path);
             //if (attechmentObjs != null)

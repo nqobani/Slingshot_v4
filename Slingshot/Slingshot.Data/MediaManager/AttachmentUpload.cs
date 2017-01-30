@@ -14,6 +14,7 @@ namespace Slingshot.Data.MediaManager
     public class AttachmentUpload
     {
         private readonly string containerName = "attachments";
+
         public async Task<string> SaveAttachment(long emailId, AttachmentUploadModel attachmentEntity)
         {
             // Retrieve storage account from connection string.

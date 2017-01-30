@@ -8,6 +8,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Http;
 using System.Web.Http.Controllers;
@@ -67,14 +68,14 @@ namespace Slingshot.Controllers
         /// <param name="status">'private' or 'public' If it private, the campaign will only be visible to the creator, the administrator and all the user its shared with. Only the creator and administrator can share a campaign with other users</param>
         /// <returns></returns>
         [Route("add")]
-        public Campaign addCampaign(string creatorId, AttachmentUploadModel fUpload, string campaignName = "No Name",string description="No Description", string thumbnail = " ", string subject = "immedia", string HTML = " ", string status = "public")
+        public async Task<Campaign> addCampaign(string creatorId, AttachmentUploadModel fUpload, string campaignName = "No Name",string description="No Description", string thumbnail = " ", string subject = "immedia", string HTML = " ", string status = "public")
         {
             if(string.IsNullOrWhiteSpace(creatorId))
             {
                 throw new ArgumentException("Parameter cannot be null", "original");
             }
             UserService obj = new UserService();
-            return obj.createCampaign(creatorId, campaignName, description, thumbnail, subject, HTML, fUpload, status);
+            return await obj.createCampaign(creatorId, campaignName, description, thumbnail, subject, HTML, fUpload, status);
         }
         /// <summary>
         /// Allow the user to get all the campaign she/he has access to. Its also allow the user to do the search by campaign name.
