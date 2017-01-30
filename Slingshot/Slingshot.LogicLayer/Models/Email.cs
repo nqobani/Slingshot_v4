@@ -15,7 +15,6 @@ namespace Slingshot.Data.Models
         public long campaignId { get; set; }
         public string subject { get; set; }
         public string html { get; set; }
-        //[ForeignKey("Id")]
-        public virtual ICollection<Attachment> attachments { get; set; }
+        public virtual ISet<Attachment> attachments { get; set; }
     }
 }
