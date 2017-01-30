@@ -45,10 +45,10 @@ namespace Slingshot.Controllers
         /// <summary>
         /// send campiagn to recipient/s
         /// </summary>
-        /// <param name="userId">Is a primary key for a user ( each user has a unique primary key). This field is used to get user the senders data for example email address</param>
-        /// <param name="campId">Key the Indenify each an evey campaign in a system. With this key provided, the api will be able to get all the data associated with that campaign and prepare it to be sent to the recipient.</param>
-        /// <param name="toEmail">This field takes recipients email address/es. If you want to send the campaign to multiple users, you can provide as many email addresses as you can (the list of provided email addresses must be comma seperated. e.g nqobani@gmail.com,zulu@oulook.co.za)</param>
-        /// <param name="vcardId">Each an every vCard has it own Id. The Id is user to get all the other vCard data from the api. If it provided, the api will attach that vCard to the campaign being sent</param>
+        /// <param name="userId">Is a primary key for a user (each user has a unique primary key). This field is used to get user's/sender's data for example email address</param>
+        /// <param name="campId">Key used to Indentify each an evey campaign in a system. With this key provided, the api will be able to get all the data associated with that campaign and prepare it to be sent to the recipient.</param>
+        /// <param name="toEmail">This field takes recipients email address/es. If you want to send the campaign to multiple users, you can provide as many email addresses as you want (the list of provided email addresses must be comma seperated. e.g nqobani@gmail.com,zulu@oulook.co.za)</param>
+        /// <param name="vcardId">Each an every vCard has it own Id. The Id is used to get all the other vCard data from the api. If its provided, the api will attach that vCard to the campaign being sent and send it with it</param>
         /// <returns></returns>
         [Route("send")]
         public History sendCampaigns(string userId, long campId, string toEmail, long vcardId = 0)

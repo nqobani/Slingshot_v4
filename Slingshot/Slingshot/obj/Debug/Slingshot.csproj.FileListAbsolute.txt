@@ -443,3 +443,4 @@ C:\Users\Nqobani Zulu\Documents\Slingshot_v4\Slingshot\Slingshot\bin\ko\System.S
 C:\Users\Nqobani Zulu\Documents\Slingshot_v4\Slingshot\Slingshot\bin\ru\System.Spatial.resources.dll
 C:\Users\Nqobani Zulu\Documents\Slingshot_v4\Slingshot\Slingshot\bin\zh-Hans\System.Spatial.resources.dll
 C:\Users\Nqobani Zulu\Documents\Slingshot_v4\Slingshot\Slingshot\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\Nqobani Zulu\Documents\Slingshot_v4\Slingshot\Slingshot\bin\doc\Slingshot.XML
