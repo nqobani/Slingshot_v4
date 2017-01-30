@@ -94,11 +94,12 @@ namespace Slingshot.Controllers
         /// </summary>
         /// <param name="userId"></param>
         /// <param name="campaignId"></param>
+        /// <param name="shareWith_userId"></param>
         /// <returns></returns>
         [Route("share")]
-        public Boolean shareCampaign(string userId, long campaignId)
+        public Boolean shareCampaign(string userId, long campaignId, string shareWith_userId)
         {
-            return obj.ShareCampaigns(userId, campaignId);
+            return obj.ShareCampaigns(userId, campaignId, shareWith_userId);
         }
         /// <summary>
         /// Code Testing...

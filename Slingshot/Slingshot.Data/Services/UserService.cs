@@ -104,14 +104,14 @@ namespace Slingshot.Data.Services
 
             return campaign;
         }
-        public Boolean ShareCampaigns(string userId, long campId)
+        public Boolean ShareCampaigns(string userId, long campId, string shareWith_userId)
         {
             Boolean shared = false;
             if (dbCon.UserExists(userId))
             {
                 if (_validationHandler.CanUserShare(userId, campId))
                 {
-                    dbCon.userCampaign(userId, campId);
+                    dbCon.userCampaign(shareWith_userId, campId);
                     shared = true;
                 }
             }

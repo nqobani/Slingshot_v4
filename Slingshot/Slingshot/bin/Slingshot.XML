@@ -530,12 +530,13 @@
             <param name="name">Name of a campaign that the user can use for searching purposes</param>
             <returns></returns>
         </member>
-        <member name="M:Slingshot.Controllers.CampaignController.shareCampaign(System.String,System.Int64)">
+        <member name="M:Slingshot.Controllers.CampaignController.shareCampaign(System.String,System.Int64,System.String)">
             <summary>
             Used to provided users access to campaigns
             </summary>
             <param name="userId"></param>
             <param name="campaignId"></param>
+            <param name="shareWith_userId"></param>
             <returns></returns>
         </member>
         <member name="M:Slingshot.Controllers.CampaignController.uploadImage(Slingshot.LogicLayer.Models.AttachmentUploadModel)">
