@@ -12,7 +12,6 @@ namespace Slingshot.Data.Models
     {
         [Key]
         public long Id { get; set; }
-        [ForeignKey("emailId")]
         public long emailId { get; set; }
         public string name { get; set; }
         public string file { get; set; }

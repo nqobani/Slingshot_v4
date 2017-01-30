@@ -13,7 +13,7 @@ namespace Slingshot.Data.MediaManager
 {
     public class AttachmentUpload
     {
-
+        private readonly string containerName = "attachments";
         public async Task<string> SaveAttachment(long emailId, AttachmentUploadModel attachmentEntity)
         {
             // Retrieve storage account from connection string.
@@ -23,7 +23,7 @@ namespace Slingshot.Data.MediaManager
             CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient();
 
             // Retrieve a reference to a container. 
-            CloudBlobContainer container = blobClient.GetContainerReference("attachments");
+            CloudBlobContainer container = blobClient.GetContainerReference(containerName);
 
             // Create the container if it doesn't already exist.
             var containerResult = container.CreateIfNotExists();
@@ -65,6 +65,24 @@ namespace Slingshot.Data.MediaManager
             File.Delete(tempFile);
             var filePath = blockBlob.StorageUri.PrimaryUri.AbsoluteUri.ToString();
             return filePath;
+        }
+        public void DeleteAttachment(string fileRef)
+        {
+            // Retrieve storage account from connection string.
+            CloudStorageAccount storageAccount = CloudStorageAccount.Parse(CloudConfigurationManager.GetSetting("StorageConnectionString"));
+
+            // Create the blob client.
+            CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient();
+
+            // Retrieve reference to a previously created container.
+            CloudBlobContainer container = blobClient.GetContainerReference(containerName);
+
+            // Retrieve reference to a blob named "myblob.txt".
+            CloudBlockBlob blockBlob = container.GetBlockBlobReference(fileRef);
+
+            // Delete the blob.
+            blockBlob.Delete();
+
         }
     }
 }

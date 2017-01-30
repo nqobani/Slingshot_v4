@@ -17,7 +17,7 @@ namespace Slingshot.Data.Models
         public string description { set; get; }
         public string status { get; set; }
         public string thumbnail { get; set; }
-        [ForeignKey("Id")]
+        //[ForeignKey("Id")]
         public virtual ICollection<Email> email { get; set; }
     }
 }
