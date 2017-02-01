@@ -508,9 +508,9 @@
             <param name="vcardId">Each an every vCard has it own Id. The Id is used to get all the other vCard data from the api. If its provided, the api will attach that vCard to the campaign being sent and send it with it</param>
             <returns></returns>
         </member>
-        <member name="M:Slingshot.Controllers.CampaignController.addCampaign(System.String,Slingshot.LogicLayer.Models.AttachmentUploadModel,System.String,System.String,System.String,System.String,System.String,System.String)">
+        <member name="M:Slingshot.Controllers.CampaignController.addCampaignWithAttachment(System.String,Slingshot.LogicLayer.Models.AttachmentUploadModel,System.String,System.String,System.String,System.String,System.String,System.String)">
             <summary>
-            This end-point is capable of creating a complete campaign( with the subject, campaign body in HTML formate and the attechments
+            This end-point is capable of creating a complete campaign( with the subject, campaign body in HTML formate and attechments)
             </summary>
             <param name="creatorId">Creator Id is foriegn key the Indentify the user that is creating a campaign</param>
             <param name="fUpload"></param>
@@ -520,6 +520,19 @@
             <param name="subject">This will show as subject when the campaign is sent to the recipient</param>
             <param name="HTML">Campaign body must be in HTML format</param>
             <param name="status">'private' or 'public' If it private, the campaign will only be visible to the creator, the administrator and all the user its shared with. Only the creator and administrator can share a campaign with other users</param>
+            <returns></returns>
+        </member>
+        <member name="M:Slingshot.Controllers.CampaignController.addCampaign(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            This end-point is capable of creating a complete campaign( with the subject, campaign body in HTML formate but <b>no attechments</b> )
+            </summary>
+            <param name="creatorId"></param>
+            <param name="campaignName"></param>
+            <param name="description"></param>
+            <param name="thumbnail"></param>
+            <param name="subject"></param>
+            <param name="HTML"></param>
+            <param name="status"></param>
             <returns></returns>
         </member>
         <member name="M:Slingshot.Controllers.CampaignController.getCampaigns(System.String,System.String)">
