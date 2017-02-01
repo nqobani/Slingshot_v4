@@ -518,7 +518,7 @@
             <param name="description"></param>
             <param name="thumbnail"></param>
             <param name="subject"></param>
-            <param name="HTML"></param>
+            <param name="HTML">A campaign must be in HTML format</param>
             <param name="status">'private' or 'public' If it private, the campaign will only be visible to the creator, the administrator and all the user its shared with. Only the creator and administrator can share a campaign with other users</param>
             <returns></returns>
         </member>
@@ -539,7 +539,7 @@
             <param name="shareWith_userId"></param>
             <returns></returns>
         </member>
-        <member name="M:Slingshot.Controllers.CampaignController.uploadImage(Slingshot.LogicLayer.Models.AttachmentUploadModel)">
+        <member name="M:Slingshot.Controllers.CampaignController.SetAsDefaultCampaign(System.String,System.Int64)">
             <summary>
             Code Testing...
             </summary>
@@ -608,7 +608,7 @@
             <param name="type">'member' or 'admin': Nothing can hiden from an admin (administrator).</param>
             <returns></returns>
         </member>
-        <member name="M:Slingshot.Controllers.UserController.GetAllUsers(System.String)">
+        <member name="M:Slingshot.Controllers.UserController.GetAllUsers(System.String,System.String)">
             <summary>
             Returns all the users in the database.
             </summary>
