@@ -514,11 +514,11 @@
             </summary>
             <param name="creatorId">Creator Id is foriegn key the Indentify the user that is creating a campaign</param>
             <param name="fUpload"></param>
-            <param name="campaignName"></param>
-            <param name="description"></param>
+            <param name="campaignName">CampaignName is a display name of a campaign beign created. </param>
+            <param name="description">A short destription of a campaign.</param>
             <param name="thumbnail"></param>
-            <param name="subject"></param>
-            <param name="HTML">A campaign must be in HTML format</param>
+            <param name="subject">This will show as subject when the campaign is sent to the recipient</param>
+            <param name="HTML">Campaign body must be in HTML format</param>
             <param name="status">'private' or 'public' If it private, the campaign will only be visible to the creator, the administrator and all the user its shared with. Only the creator and administrator can share a campaign with other users</param>
             <returns></returns>
         </member>
@@ -534,17 +534,24 @@
             <summary>
             Used to provided users access to campaigns
             </summary>
-            <param name="userId"></param>
-            <param name="campaignId"></param>
-            <param name="shareWith_userId"></param>
+            <param name="userId">Id of a user sharing the campaign. The campaign can only be shared by it creator and administrator</param>
+            <param name="campaignId">Id the of a campaign being sent</param>
+            <param name="shareWith_userId">Id of a user that the campaign is to be sent to.</param>
             <returns></returns>
         </member>
         <member name="M:Slingshot.Controllers.CampaignController.SetAsDefaultCampaign(System.String,System.Int64)">
             <summary>
-            Code Testing...
+            Allows a user to choose a default campaign.
+            </summary>
+            <param name="userId">Id of a user setting a default campaign</param>
+            <param name="campId">Id of a chosen campaign</param>
+            <returns></returns>
+        </member>
+        <member name="M:Slingshot.Controllers.CampaignController.uploadImage">
+            <summary>
+            This is just for testing s...
             </summary>
             <returns></returns>
-            
         </member>
         <member name="M:Slingshot.Controllers.EventsController.createEvent(System.String,System.String,System.String,System.DateTime,System.DateTime)">
             <summary>
@@ -566,9 +573,9 @@
         </member>
         <member name="M:Slingshot.Controllers.RecipientController.AddClient(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
             <summary>
-            
+            Save recipient's details 
             </summary>
-            <param name="userId"></param>
+            <param name="userId">The Id of a user capturing the recipient data</param>
             <param name="fName"></param>
             <param name="lName"></param>
             <param name="email"></param>
@@ -593,6 +600,16 @@
             
             </summary>
             <param name="recipientId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Slingshot.Controllers.RecipientController.UploadImage(System.String,System.Int64,System.String,Slingshot.LogicLayer.Models.AttachmentUploadModel)">
+            <summary>
+            
+            </summary>
+            <param name="userId"></param>
+            <param name="recipientId"></param>
+            <param name="location"></param>
+            <param name="fUpload"></param>
             <returns></returns>
         </member>
         <member name="M:Slingshot.Controllers.UserController.register(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
