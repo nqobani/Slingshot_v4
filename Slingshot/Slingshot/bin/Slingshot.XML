@@ -498,14 +498,11 @@
             
             </summary>
         </member>
-        <member name="M:Slingshot.Controllers.CampaignController.sendCampaigns(System.String,System.Int64,System.String,System.Int64)">
+        <member name="M:Slingshot.Controllers.CampaignController.sendCampaigns(Slingshot.Models.SendCampaignModel)">
             <summary>
             send campiagn to recipient/s
             </summary>
-            <param name="userId">Is a primary key for a user (each user has a unique primary key). This field is used to get user's/sender's data for example email address</param>
-            <param name="campId">Key used to Indentify each an evey campaign in a system. With this key provided, the api will be able to get all the data associated with that campaign and prepare it to be sent to the recipient.</param>
-            <param name="toEmail">This field takes recipients email address/es. If you want to send the campaign to multiple users, you can provide as many email addresses as you want (the list of provided email addresses must be comma seperated. e.g nqobani@gmail.com,zulu@oulook.co.za)</param>
-            <param name="vcardId">Each an every vCard has it own Id. The Id is used to get all the other vCard data from the api. If its provided, the api will attach that vCard to the campaign being sent and send it with it</param>
+            <param name="sendCampaignModel"></param>
             <returns></returns>
         </member>
         <member name="M:Slingshot.Controllers.CampaignController.addCampaignWithAttachment(System.String,Slingshot.LogicLayer.Models.AttachmentUploadModel,System.String,System.String,System.String,System.String,System.String)">
@@ -516,7 +513,6 @@
             <param name="Attachment"></param>
             <param name="campaignName">CampaignName is a display name of a campaign beign created. </param>
             <param name="description">A short destription of a campaign.</param>
-            <param name="thumbnail"></param>
             <param name="subject">This will show as subject when the campaign is sent to the recipient</param>
             <param name="HTML">Campaign body must be in HTML format</param>
             <param name="status">'private' or 'public' If it private, the campaign will only be visible to the creator, the administrator and all the user its shared with. Only the creator and administrator can share a campaign with other users</param>
@@ -530,27 +526,18 @@
             <param name="name">Name of a campaign that the user can use for searching purposes</param>
             <returns></returns>
         </member>
-        <member name="M:Slingshot.Controllers.CampaignController.shareCampaign(System.String,System.Int64,System.String)">
+        <member name="M:Slingshot.Controllers.CampaignController.shareCampaign(Slingshot.Models.ShareCampaign)">
             <summary>
             Used to provided users access to campaigns
             </summary>
-            <param name="userId">Id of a user sharing the campaign. The campaign can only be shared by it creator and administrator</param>
-            <param name="campaignId">Id the of a campaign being sent</param>
-            <param name="shareWith_userId">Id of a user that the campaign is to be sent to.</param>
+            <param name="shareCampaign"></param>
             <returns></returns>
         </member>
-        <member name="M:Slingshot.Controllers.CampaignController.SetAsDefaultCampaign(System.String,System.Int64)">
+        <member name="M:Slingshot.Controllers.CampaignController.SetAsDefaultCampaign(Slingshot.Models.SetDefaultCamp)">
             <summary>
             Allows a user to choose a default campaign.
             </summary>
-            <param name="userId">Id of a user setting a default campaign</param>
-            <param name="campId">Id of a chosen campaign</param>
-            <returns></returns>
-        </member>
-        <member name="M:Slingshot.Controllers.CampaignController.uploadImage">
-            <summary>
-            This is just for testing s...
-            </summary>
+            <param name="dCamp"></param>
             <returns></returns>
         </member>
         <member name="M:Slingshot.Controllers.EventsController.createEvent(System.String,System.String,System.String,System.DateTime,System.DateTime)">
@@ -571,16 +558,25 @@
             <param name="userId"></param>
             <returns></returns>
         </member>
-        <member name="M:Slingshot.Controllers.RecipientController.AddClient(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+        <member name="M:Slingshot.Controllers.RecipientController.AddClient(Slingshot.Models.AddClient)">
             <summary>
-            Save recipient's details 
+            Save recipient's details
             </summary>
-            <param name="userId">The Id of a user capturing the recipient data</param>
+            <param name="recipient"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Slingshot.Controllers.RecipientController.UpdateReciptient(System.String,System.Int64,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="userId"></param>
+            <param name="recipientIdId"></param>
             <param name="fName"></param>
             <param name="lName"></param>
             <param name="email"></param>
-            <param name="cell"></param>
-            <param name="jobTile"></param>
+            <param name="phone"></param>
+            <param name="company"></param>
+            <param name="jobTitle"></param>
             <param name="country"></param>
             <param name="province"></param>
             <param name="city"></param>
@@ -588,7 +584,7 @@
             <param name="code"></param>
             <returns></returns>
         </member>
-        <member name="M:Slingshot.Controllers.RecipientController.GetAllUserClients(System.Int64)">
+        <member name="M:Slingshot.Controllers.RecipientController.GetAllUserClients(System.String)">
             <summary>
             
             </summary>
@@ -597,7 +593,7 @@
         </member>
         <member name="M:Slingshot.Controllers.RecipientController.GetClient(System.Int64)">
             <summary>
-            
+            Get recipient by Id- recipientId.
             </summary>
             <param name="recipientId"></param>
             <returns></returns>
@@ -612,44 +608,43 @@
             <param name="fUpload"></param>
             <returns></returns>
         </member>
-        <member name="M:Slingshot.Controllers.UserController.register(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+        <member name="T:Slingshot.Controllers.UserController">
             <summary>
-            Create a new user account
+            
             </summary>
-            <param name="userName"></param>
-            <param name="firstName"></param>
-            <param name="lastName"></param>
-            <param name="email"></param>
-            <param name="password"></param>
-            <param name="phone"></param>
-            <param name="type">'member' or 'admin': Nothing can hiden from an admin (administrator).</param>
+        </member>
+        <member name="M:Slingshot.Controllers.UserController.register(Slingshot.Models.AddUserModel)">
+            <summary>
+            Create a new user. Set 'contant-type' header to 'application/json'
+            </summary>
+            <param name="user">The JSON structure must be like this {"userName": "string","firstName": "string","lastName": "string","email": "string","password": "string", "phone": "string", "type": "string"}. 'type' can be private or public.</param>
             <returns></returns>
         </member>
-        <member name="M:Slingshot.Controllers.UserController.Login(System.String,System.String)">
+        <member name="M:Slingshot.Controllers.UserController.Login(Slingshot.Models.UserLogin)">
             <summary>
-            Login by providing a correct username and password
+            Login by providing a correct username and password.
+            set a header **content-type to application/json**
             </summary>
-            <param name="username"></param>
-            <param name="password"></param>
+            <param name="login"> The JSON structure must be as the following : {"username": "string","password": "string"}.</param>
             <returns></returns>
         </member>
         <member name="M:Slingshot.Controllers.UserController.getUserProfile(System.String)">
             <summary>
-            
+            Return the user profile
             </summary>
-            <param name="userId"></param>
+            <param name="userId">for whose profile is to be returned</param>
             <returns></returns>
             
         </member>
         <member name="M:Slingshot.Controllers.UserController.GetAllUsers(System.String,System.String)">
             <summary>
-            Returns all the users in the database.
+            Returns all user from the database that matches the search
             </summary>
-            <param name="userName"></param>
-            <param name="userId"></param>
+            <param name="userId">For a user making the request</param>
+            <param name="userName">Search by user name</param>
             <returns></returns>
         </member>
-        <member name="M:Slingshot.Controllers.UserController.createVCard(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,Slingshot.LogicLayer.Models.AttachmentUploadModel)">
+        <member name="M:Slingshot.Controllers.UserController.createVCard(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,Slingshot.LogicLayer.Models.AttachmentUploadModel)">
             <summary>
             The data provided on this end-point will be used to create a vCard that will be attached to the campaign being sent. It also allow the user to upload a profile image.
             </summary>
@@ -664,7 +659,32 @@
             <param name="businessPhoneNumber"></param>
             <param name="mobilePhone"></param>
             <param name="country"></param>
+            <param name="province"></param>
             <param name="city"></param>
+            <param name="street"></param>
+            <param name="cityCode"></param>
+            <param name="fUpload"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Slingshot.Controllers.UserController.updateVCard(System.String,System.Int64,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,Slingshot.LogicLayer.Models.AttachmentUploadModel)">
+            <summary>
+            
+            </summary>
+            <param name="userId"></param>
+            <param name="vcId"></param>
+            <param name="firstName"></param>
+            <param name="lastName"></param>
+            <param name="company"></param>
+            <param name="jobTitle"></param>
+            <param name="email"></param>
+            <param name="webPageAddress"></param>
+            <param name="twitter"></param>
+            <param name="businessPhoneNumber"></param>
+            <param name="mobilePhone"></param>
+            <param name="country"></param>
+            <param name="province"></param>
+            <param name="city"></param>
+            <param name="street"></param>
             <param name="cityCode"></param>
             <param name="fUpload"></param>
             <returns></returns>
