@@ -510,7 +510,7 @@
             This end-point is capable of creating a complete campaign( with the subject, campaign body in HTML formate and attechments)
             </summary>
             <param name="creatorId">Creator Id is foriegn key the Indentify the user that is creating a campaign</param>
-            <param name="Attachment"></param>
+            <param name="Attachment">'Attachment' Is used to upload file like images, audio, text files and videos. The maximum number of files/attachments that can be uploaded per campaign is 5 + 1 thumbnail. The total size of attachments must be no more than 15MB.</param>
             <param name="campaignName">CampaignName is a display name of a campaign beign created. </param>
             <param name="description">A short destription of a campaign.</param>
             <param name="subject">This will show as subject when the campaign is sent to the recipient</param>
@@ -520,7 +520,7 @@
         </member>
         <member name="M:Slingshot.Controllers.CampaignController.getCampaigns(System.String,System.String)">
             <summary>
-            Allow the user to get all the campaign she/he has access to. Its also allow the user to do the search by campaign name.
+            Allow the user to get all the campaigns she/he has access to. Its also allow the user to do the search by campaign name.
             </summary>
             <param name="userId">Foreign key used to check which camplaigns does the user have access to</param>
             <param name="name">Name of a campaign that the user can use for searching purposes</param>
@@ -528,16 +528,39 @@
         </member>
         <member name="M:Slingshot.Controllers.CampaignController.shareCampaign(Slingshot.Models.ShareCampaign)">
             <summary>
-            Used to provided users access to campaigns
+            Used to provided users (users that doesn't have access to that campaign) access to campaigns
             </summary>
             <param name="shareCampaign"></param>
             <returns></returns>
         </member>
         <member name="M:Slingshot.Controllers.CampaignController.SetAsDefaultCampaign(Slingshot.Models.SetDefaultCamp)">
             <summary>
-            Allows a user to choose a default campaign.
+            Allows a user to choose a default campaign. The default campaign is always first on the list.
             </summary>
             <param name="dCamp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Slingshot.Controllers.CampaignController.RemoveDefaultCamp(System.String)">
+            <summary>
+            Removes a defavouted/default campaign. When the user doesn't have a default campaign, the sysem will put the last sent campaign on the first position of the list.
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Slingshot.Controllers.CampaignController.DeleteCampaign(System.String,System.Int64)">
+            <summary>
+            Disables users from accessing the campaign. Only the creator of a campaign and the admin can disble the campaign.
+            </summary>
+            <param name="userId"></param>
+            <param name="campId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Slingshot.Controllers.CampaignController.EnableCampaign(System.String,System.Int64)">
+            <summary>
+            enables users to access the campaign again. Its only the admin who can enable disabled campaigns.
+            </summary>
+            <param name="userId"></param>
+            <param name="campId"></param>
             <returns></returns>
         </member>
         <member name="M:Slingshot.Controllers.EventsController.createEvent(System.String,System.String,System.String,System.DateTime,System.DateTime)">
@@ -565,30 +588,19 @@
             <param name="recipient"></param>
             <returns></returns>
         </member>
-        <member name="M:Slingshot.Controllers.RecipientController.UpdateReciptient(System.String,System.Int64,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+        <member name="M:Slingshot.Controllers.RecipientController.UpdateReciptient(Slingshot.Models.RecipientUpdateModel)">
             <summary>
-            
+            Allow the user to update recipient's data.
             </summary>
-            <param name="userId"></param>
-            <param name="recipientIdId"></param>
-            <param name="fName"></param>
-            <param name="lName"></param>
-            <param name="email"></param>
-            <param name="phone"></param>
-            <param name="company"></param>
-            <param name="jobTitle"></param>
-            <param name="country"></param>
-            <param name="province"></param>
-            <param name="city"></param>
-            <param name="street"></param>
-            <param name="code"></param>
+            <param name="recipient"></param>
             <returns></returns>
         </member>
-        <member name="M:Slingshot.Controllers.RecipientController.GetAllUserClients(System.String)">
+        <member name="M:Slingshot.Controllers.RecipientController.GetAllUserClients(System.String,System.String)">
             <summary>
-            
+            Returns all recipients that were saved by a specific user.
             </summary>
             <param name="userId"></param>
+            <param name="email">search by email address</param>
             <returns></returns>
         </member>
         <member name="M:Slingshot.Controllers.RecipientController.GetClient(System.Int64)">
@@ -638,13 +650,13 @@
         </member>
         <member name="M:Slingshot.Controllers.UserController.GetAllUsers(System.String,System.String)">
             <summary>
-            Returns all user from the database that matches the search
+            Returns all users from the database that matches the search
             </summary>
             <param name="userId">For a user making the request</param>
             <param name="userName">Search by user name</param>
             <returns></returns>
         </member>
-        <member name="M:Slingshot.Controllers.UserController.createVCard(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,Slingshot.LogicLayer.Models.AttachmentUploadModel)">
+        <member name="M:Slingshot.Controllers.UserController.createVCard(System.String,System.String,Slingshot.LogicLayer.Models.AttachmentUploadModel,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
             <summary>
             The data provided on this end-point will be used to create a vCard that will be attached to the campaign being sent. It also allow the user to upload a profile image.
             </summary>
@@ -662,13 +674,13 @@
             <param name="province"></param>
             <param name="city"></param>
             <param name="street"></param>
-            <param name="cityCode"></param>
+            <param name="Code"></param>
             <param name="fUpload"></param>
             <returns></returns>
         </member>
-        <member name="M:Slingshot.Controllers.UserController.updateVCard(System.String,System.Int64,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,Slingshot.LogicLayer.Models.AttachmentUploadModel)">
+        <member name="M:Slingshot.Controllers.UserController.updateVCard(System.String,System.Int64,Slingshot.LogicLayer.Models.AttachmentUploadModel,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
             <summary>
-            
+            Allows the user to update the vCard
             </summary>
             <param name="userId"></param>
             <param name="vcId"></param>
@@ -685,13 +697,13 @@
             <param name="province"></param>
             <param name="city"></param>
             <param name="street"></param>
-            <param name="cityCode"></param>
+            <param name="Code"></param>
             <param name="fUpload"></param>
             <returns></returns>
         </member>
         <member name="M:Slingshot.Controllers.UserController.GetUserVCards(System.String)">
             <summary>
-            
+            Returns user vCards
             </summary>
             <param name="userId"></param>
             <returns></returns>
